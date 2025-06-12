@@ -25,9 +25,8 @@
             "group": "Builder Experience",
             "pages": [
               "essentials/Overview",              
-              "essentials/Build",
               {
-                "group": "Nested Reference Pages",
+                "group": "Build",
                 "pages": [
                   "builder/behavior",
                   "builder/skills",
@@ -46,7 +45,7 @@
             "pages": [
               "essentials/Overview",              
               "essentials/Home",
-              "essentials/Monetize",
+              "essentials/in",
               "essentials/Attract",
               "essentials/Engage"
             ]
