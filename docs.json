@@ -24,23 +24,31 @@
           {
             "group": "Builder Experience",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "essentials/Overview",              
+              "essentials/Build",
+              {
+                "group": "Nested Reference Pages",
+                "pages": [
+                  "builder/behavior",
+                  "builder/skills",
+                  "builder/tools",
+                  "builder/personalization",
+                  "builder/triggers"
+                ]
+              },
+              "essentials/Monetize",
+              "essentials/Attract",
+              "essentials/Engage"
             ]
           },
           {
             "group": "Subscriber Experience",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "essentials/Overview",              
+              "essentials/Home",
+              "essentials/Monetize",
+              "essentials/Attract",
+              "essentials/Engage"
             ]
           },
           {
