@@ -1,0 +1,115 @@
+---
+title: "Agent Personalization"
+description: "Personalization lets you collect specific information from each user during onboarding, then use that information to customize every interaction with your agent. It's like having a personal assistant that remembers exactly what each person needs."
+---
+
+<img
+  src="/images/Screenshot2025-06-12at4.35.45PM.png"
+  alt="Screenshot2025 06 12at4 35 45PM Pn"
+  title="Screenshot2025 06 12at4 35 45PM Pn"
+  className="mr-auto"
+  style={{ width:"62%" }}
+/>
+
+## How Personalization Works
+
+When someone signs up to use your agent, they'll go through a simple onboarding process where you can ask them for their preferences, requirements, or personal details. This information gets saved to their profile and your agent automatically uses it in every conversation - no need to ask the same questions over and over.
+
+### Real-World Example
+
+Imagine you're building an agent that helps people find shelter kittens for adoption. Instead of asking "What breed do you prefer?" in every conversation, you can set up personalization to collect:
+
+- Preferred breed
+- Location/zip code
+- Age preference (kitten vs adult)
+- Size preference
+- Color preferences
+- Any special needs they can accommodate
+
+Now every time they use your agent, it already knows their preferences and can immediately search for cats that match their criteria.
+
+## Creating Personalization Settings
+
+Click "Create new setting" to add a preference that users will provide during onboarding.
+
+<img
+  src="/images/Screenshot2025-06-12at4.38.53PM.png"
+  alt="Screenshot2025 06 12at4 38 53PM Pn"
+  title="Screenshot2025 06 12at4 38 53PM Pn"
+  style={{ width:"69%" }}
+/>
+
+### Setting Options
+
+- **Group**: Organize related settings together for a cleaner onboarding experience
+- **Name**: What you'll call this setting internally (users won't see this)
+- **Type**: Choose from text, dropdown, number, or other input types
+- **Description**: Instructions that help users understand what to provide
+- **Default Value**: Pre-fill common answers to make onboarding faster
+- **Help URL**: Link to additional explanation if needed
+- **Required**: Whether users must provide this information to continue
+
+## Types of Personalization Options
+
+Here are just a few ideas for personalization preferences to collect from you subscribers:
+
+### Basic Information
+
+- Location/zip code
+- Industry or profession
+- Company size
+- Experience level
+
+### Preferences & Requirements
+
+- Budget ranges
+- Preferred communication style
+- Specific needs or constraints
+- Goals and objectives
+
+### Integration Details
+
+- API keys for services
+- Account information
+- Custom URLs or endpoints
+- Third-party credentials
+
+## Best Practices
+
+### Keep Onboarding Simple
+
+- Only ask for information your agent actually uses
+- Group related settings together
+- Provide clear descriptions and examples
+- Use default values when possible
+
+### Make It Optional When You Can
+
+- Required settings create friction during signup
+- Users can always update their preferences later
+- Consider what's truly necessary vs. nice-to-have
+
+### Test Your Onboarding
+
+- Go through the signup process yourself
+- Make sure questions are clear and easy to answer
+- Verify your agent uses the collected information properly
+
+## User Experience
+
+Once you've set up personalization, new users will see these questions during their onboarding. They can update their preferences anytime in their account settings, and the changes will immediately affect how your agent responds to them.
+
+Your agent automatically has access to all of this personalized information in every conversation, making each interaction feel tailored specifically to that user.
+
+## Getting Started
+
+1. **Think about what makes each customer unique** for your specific use case
+2. **Start with 3-5 essential settings** - you can always add more later
+3. **Create clear, helpful descriptions** for each setting
+4. **Update your agent's instructions** to reference the personalization data
+
+<Note>
+  Reference settings in your Behavior by adding {{Settings}} to the top of your instructions.
+</Note>
+
+Remember: The goal is to make your agent feel like it truly knows each user personally\!

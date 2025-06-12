@@ -29,8 +29,6 @@
                 "group": "Build",
                 "pages": [
                   "builder/behavior",
-                  "builder/skills",
-                  "builder/tools",
                   "builder/personalization",
                   "builder/triggers"
                 ]
