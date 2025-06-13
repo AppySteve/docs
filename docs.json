@@ -33,9 +33,9 @@
                   "builder/triggers"
                 ]
               },
-              "essentials/Monetize",
-              "essentials/Attract",
-              "essentials/Engage"
+              "builder/Monetize",
+              "builder/Attract",
+              "builder/Engage"
             ]
           },
           {
