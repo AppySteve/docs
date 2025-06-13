@@ -23,7 +23,7 @@
           {
             "group": "Builder Experience",
             "pages": [
-              "builder/Overview",              
+              "builder/overview",              
               {
                 "group": "Build",
                 "pages": [
