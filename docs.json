@@ -17,8 +17,7 @@
             "group": "Get Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
@@ -33,9 +32,9 @@
                   "builder/triggers"
                 ]
               },
-              "builder/Monetize",
-              "builder/Attract",
-              "builder/Engage"
+              "builder/monetize",
+              "builder/attract",
+              "builder/engage"
             ]
           },
           {
