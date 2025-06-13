@@ -7,6 +7,13 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/aaronwhite",
+      "discord": "https://discord.com/channels/1362845797447631089/1362845798446141503",
+      "linkedin": "https://www.linkedin.com/company/appypeople/"
+    }
+  },
   "favicon": "/images/favicon.svg",
   "navigation": {
     "tabs": [
@@ -81,13 +88,6 @@
       "type": "button",
       "label": "Dashboard",
       "href": "https://builder.appy.ai/builder"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/aaronwhite",
-      "discord": "https://discord.com/channels/1362845797447631089/1362845798446141503",
-      "linkedin": "https://www.linkedin.com/company/appypeople/"
     }
   }
 }
