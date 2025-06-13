@@ -41,13 +41,11 @@
             "group": "Subscriber Experience",
             "pages": [
               "subscriber/overview",              
-              "subscriber/onboarding",
-              "subscriber/home",              
+              "subscriber/onboarding",          
               "subscriber/preferences",
               "subscriber/support",              
               "subscriber/billing",
-              "subscriber/account",                         
-              "essentials/Engage"
+              "subscriber/account"
             ]
           }
         ]
