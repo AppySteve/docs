@@ -1,5 +1,5 @@
 <AccordionGroup>
-<Accordion title="User Chat" icon="message">
+  <Accordion title="User Chat" icon="message">
     ### What it does
 
     User Chat enables your agent to have interactive conversations with users, just like ChatGPT or Claude. Instead of only running automated processes, your agent can respond to questions, provide guidance, and engage in back-and-forth dialogue while still having access to all its tools and knowledge.
@@ -21,8 +21,8 @@
     ### Real-world scenario
 
     Imagine you're a business consultant who created an agent called "Strategy Advisor." Instead of just generating automated reports, users can have conversations like: "I'm thinking about expanding to a new market - what should I consider?" Your agent asks clarifying questions about their business, industry, and goals, then users can upload their financial statements or market research. Through the conversation, your agent provides tailored strategic advice, answers follow-up questions, and helps them think through the decision - creating a much more personalized and valuable experience than any automated report could provide.
-</Accordion>  
-<Accordion title="Google Search" icon="magnifying-glass">
+  </Accordion>
+  <Accordion title="Google Search" icon="magnifying-glass">
     ### What it does
 
     Google Search gives your agent the ability to find current information from across the internet, just like when you search on Google yourself. Your agent can automatically search for specific topics, gather the latest information, and use those results to provide up-to-date, comprehensive answers to your users.
@@ -72,7 +72,7 @@
 
     Your agent uses Website Scraper to visit your client's top 5 competitor websites, automatically extracts their current pricing information, identifies patterns across the data, and presents a comprehensive analysis with specific examples and recommendations - all in minutes instead of hours of manual research.
   </Accordion>
-<Accordion title="Browser Use" icon="browser">
+  <Accordion title="Browser Use" icon="browser">
     ### What it does
 
     Browser Use gives your agent the ability to control a web browser just like a human would - clicking buttons, filling out forms, navigating between pages, and even logging into password-protected systems on your behalf. Think of it as having a digital assistant who can perform any task you could do in a web browser.
@@ -96,8 +96,8 @@
     Imagine you're a marketing consultant who created an agent called "Directory Management Assistant." You need to keep your clients' business information updated across 20 different local directory websites, each requiring login credentials and manual form updates.
 
     Your agent uses Browser Use to automatically log into each directory site with the stored credentials, navigate to the business profile section, update the hours of operation, phone number, and service descriptions, and confirm the changes - completing in 30 minutes what would normally take hours of repetitive manual work.
-</Accordion>
-<Accordion title="File System" icon="file-contract">
+  </Accordion>
+  <Accordion title="File System" icon="file-contract">
     ### What it does
 
     File System allows your agent to create documents, reports, and other written materials that users can view, edit, and download. Think of it as your agent's ability to 'write things down' - creating organized, editable documents that capture insights, analysis, or any written work your agent produces.
@@ -122,7 +122,7 @@
 
     The client can then directly edit the document to adjust strategies, add their own insights, modify timelines, or customize sections to match their brand voice. They can save their changes, download the final plan as a PDF to share with their team, and return to reference or update it anytime. This creates a tangible, actionable deliverable that goes far beyond a simple conversation.
   </Accordion>
- <Accordion title="File Converter" icon="code-compare">
+  <Accordion title="File Converter" icon="code-compare">
     ### What it does
 
     File Converter gives your agent the ability to transform files between different formats automatically - converting documents, images, audio, video, spreadsheets, and presentations into the exact format your users need. With support for over 200 file formats, your agent can handle virtually any conversion request seamlessly.
@@ -151,6 +151,10 @@
     ### What it does
 
     Send Email allows your agent to automatically create and send professional, rich HTML emails to your users. Your agent can use email templates you provide or generate completely custom emails on the fly, including images, formatting, links, and personalized content - all without you having to manually write or send anything.
+
+    ### Instructing your agent
+
+    In addition to adding the tool, add instructions in your agent behavior to send emails to subscriber. Add the text **\\{\\subscribingUserEmail\\}\\} **so the agent knows who to send the email to.
 
     ### Why you'd use it
 
