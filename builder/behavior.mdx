@@ -5,13 +5,13 @@ description: "The Behavior section is where you define what your agent does and 
 
 import ToolSnippet from '/snippets/tool-snippet.mdx';
 
-![Behavior](/images/build_overview.png)
+![behavior](/images/image.png)
 
 ## Instructions: Your Agent's Brain
 
 The Instructions box is where you tell your agent what to do and how to behave. Write in plain English - no coding required\! This is like having a detailed conversation with a really smart assistant about exactly how you want them to help your customers.
 
-### What to Include in Instructions
+### What to include:
 
 - **What your agent does**: Clearly explain the main purpose and goals
 - **How it should behave**: Define the tone, personality, and approach
@@ -26,14 +26,18 @@ The Instructions box is where you tell your agent what to do and how to behave. 
   style={{ width:"82%" }}
 />
 
-### Tips for Great Instructions
+<Tip>
+  In the example above, the builder has given clear instructions for an article summary agent\
+  \
+  **Tips for Great Instructions**
 
-- Be specific about what you want your agent to accomplish
-- Include examples of good responses when possible
-- Mention any important rules or limitations
-- Write like you're training a new team member
+  - Be specific about what you want your agent to accomplish
+  - Include examples of good responses when possible
+  - Mention any important rules or limitations
+  - Write like you're training a new team member
+</Tip>
 
-## Skills & Tools: Your Agent's Capabilities
+## Skills and Tools: Your Agent's Capabilities
 
 On the right side, you'll see Skills & Tools - these give your agent the ability to actually do things beyond just chatting.
 
@@ -52,7 +56,11 @@ Skills are custom capabilities you create when you need your agent to do somethi
 - You want to isolate a specific, repeatable task
 - The main instructions are getting too long and complex
 
-Think of skills as specialized jobs your agent can do - like "analyze a business proposal" or "create a workout plan."
+Think of skills as specialized tasks your agent can do - like "analyze a business proposal" or "create a workout plan."
+
+<Tip>
+  For many agents, custom skills are unneccessary - all instructions can remain under behavior
+</Tip>
 
 ### Tools: Built-in Superpowers
 
@@ -60,11 +68,21 @@ Tools are ready-made capabilities we've built for you, like:
 
 <ToolSnippet />
 
-Simply click to add any tools your agent needs to accomplish its goals.
+We have provide some default tools to begin, like 'userChat', 'fileSystem,' 'googleSearch', and 'websiteScraper'. Simply click to add or remove tools so your agent has what it needs to accomplish its goals.
+
+<Tip>
+  Click on the name of a tool within [builder.appy.ai](http://builder.appy.ai) to learn that tool's purpose
+</Tip>
 
 ## How It All Works Together
 
 Your agent reads its instructions, then automatically decides which skills and tools to use based on what the user needs. You don't have to manage when or how - just give good instructions and select the right capabilities.
+
+## Testing Agent Behavior
+
+Testing your agent is always one click away. Click the "Preview" button to open a separate tab and begin using your agent. You can make real time adjustments to behavior, skills, and tools and see how it impacts the preview.
+
+For skills, test just that specific task by clicking the preview skill <Icon icon="eye" /> icon in the toolbar.
 
 ## Getting Started
 
@@ -74,5 +92,5 @@ Your agent reads its instructions, then automatically decides which skills and t
 4. **Refine and add skills** as needed for complex tasks
 
 <Tip>
-  Remember: Always come back and adjust your agent's behavior as you learn what works best\!
+  Start simple and adjust based on testing\! It's easier to start with basic instructions and refine based on observation than to over-instruct to begin with.
 </Tip>
