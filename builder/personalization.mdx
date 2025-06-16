@@ -49,6 +49,17 @@ Click "Create new setting" to add a preference that users will provide during on
 - **Help URL**: Link to additional explanation if needed
 - **Required**: Select if customers must provide this information to continue
 
+<Note>
+  Requiring a setting displays it for the user during their onboarding, before they use the agent
+</Note>
+
+## Instructing the Agent
+
+Include a simple tag in your agent's behavior so that it knows to reference these settings.\
+Insert the text **{{settings}}** at the top of the instructions (include the brackets).
+
+![Screenshot 2025-06-16 at 2.12.18 PM.png](/images/Screenshot2025-06-16at2.12.18PM.png)
+
 ## Types of Personalization Options
 
 Here are just a few ideas for personalization preferences to collect from you subscribers:
@@ -97,7 +108,7 @@ Here are just a few ideas for personalization preferences to collect from you su
 
 ## User Experience
 
-Once you've set up personalization, new users will see these questions during their onboarding. They can update their preferences anytime in their account settings, and the changes will immediately affect how your agent responds to them.
+Once you've set up personalization, new customers will see required settings during their onboarding. They can update their preferences anytime in their account settings, and the changes will immediately affect how your agent responds to them.
 
 Your agent automatically has access to all of this personalized information in every conversation, making each interaction feel tailored specifically to that user.
 
@@ -109,7 +120,7 @@ Your agent automatically has access to all of this personalized information in e
 4. **Update your agent's instructions** to reference the personalization data
 
 <Note>
-  Reference settings in your Behavior by adding the text {Settings} to the top of your instructions. Include the brackets.
+  Reference settings in your Behavior by adding the text ""{{ Settings }}"" to the top of your instructions. Include the brackets.
 </Note>
 
 Remember: The goal is to make your agent feel like it truly knows each user personally\!
