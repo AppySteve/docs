@@ -1,0 +1,176 @@
+---
+title: "Configuration"
+description: "For users who want more technical control over their agent's behavior, AppyAI provides advanced configuration options through the Configuration panel. Access this by clicking the settings icon in the action bar while editing your agent."
+---
+
+<Danger>
+  **WARNING**: This section is for power users who understand the nuances of LLM model selection and input/output schemas. Not all models are capable of handling all interactions and improperly implemented schemas can lead to unexpected behavior or interactions failures. 
+</Danger>
+
+## Accessing advanced configuration
+
+You can find advanced configuration options in the action bar for your agnet's Behavior and Skills:
+
+<img
+  src="/images/configrationActionBar.png"
+  alt="Configration Action Bar Pn"
+  title="Configration Action Bar Pn"
+  style={{ width:"56%" }}
+/>
+
+## Model Selection
+
+Choose which AI model powers your agent's reasoning and responses. Different models offer varying capabilities in terms of reasoning power, speed, and cost efficiency.
+
+**Available Models**: Leading language models from OpenAI, Anthropic, Google, and Grok are supported, each with their own strengths for different use cases.
+
+<img
+  src="/images/modelSelection.png"
+  alt="Model Selection Pn"
+  title="Model Selection Pn"
+  style={{ width:"56%" }}
+/>
+
+**Model Information**: Click the "?" icon next to any model to see detailed specifications including context window size, output limits, supported input formats, tool usage capabilities, and performance characteristics. This helps you choose the right model for your specific requirements.
+
+<img
+  src="/modelDetails2.png"
+  alt="Model Details Pn"
+  title="Model Details Pn"
+  className="mx-auto"
+  style={{ width:"100%" }}
+/>
+
+**When to Change**: Most agents work excellently with the default model, but you might choose a different model for specific requirements like faster response times, enhanced reasoning capabilities, or specific input format support (like image processing).
+
+## Input and Output Schemas
+
+Define the exact structure of data your agent expects to receive and will return using JSON Schema format. This creates predictable, structured interactions instead of free-form text.
+
+### Input Schema
+
+Controls what data format your agent expects from users or other systems:
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "articleTitle": {
+      "type": "string",
+      "description": "The title of the article"
+    },
+    "articleURL": {
+      "type": "string",
+      "description": "The URL of the article"
+    }
+  },
+  "required": [
+    "articleTitle",
+    "articleURL"
+  ]
+}
+```
+
+**Benefits**:
+
+- Validates incoming data before processing
+- Ensures your agent receives properly formatted information
+- Enables integration with other systems that require specific data structures
+
+### Output Schema
+
+Defines the exact format of your agent's responses:
+
+```json
+{
+  "type": "object",
+  "description": "A LLM response indicating if the operation was successful",
+  "properties": {
+    "articleCredibilityScore": {
+      "type": "string",
+      "description": "The calculated Article Credibility Score"
+    },
+    "result": {
+      "type": "boolean",
+      "description": "A value indicating whether the operation was successful"
+    }
+  },
+  "required": [
+    "credibilityScore",
+    "result"
+  ]
+}
+```
+
+**Benefits**:
+
+- Guarantees consistent response format
+- Enables downstream systems to parse responses reliably
+- Creates structured data instead of conversational text
+
+## Custom Skills Configuration
+
+When creating custom skills, you have complete control over their technical parameters:
+
+**Name**: Choose a clear, descriptive name that helps the LLM understand when to use this skill.
+
+**Description**: Write a detailed explanation of what the skill does and when it should be used. This is crucial for helping your agent select the right skill for each task.
+
+**Schemas**: Define custom input and output schemas specific to each skill's purpose.
+
+<img
+  src="/images/configPanel.png"
+  alt="Config Panel Pn"
+  title="Config Panel Pn"
+  className="mr-auto"
+  style={{ width:"52%" }}
+/>
+
+## When to Use Advanced Configuration
+
+### Structured Data Requirements
+
+- Building agents that integrate with business systems
+- Creating APIs that require specific response formats
+- Processing form data or structured inputs
+
+### Performance Optimization
+
+- Selecting faster models for real-time applications
+- Choosing more powerful models for complex reasoning tasks
+- Optimizing for cost efficiency with lighter models
+
+### Custom Workflow Design
+
+- Building multi-step processes with specific data handoffs
+- Creating skills that work together in complex sequences
+- Designing agents for technical or specialized use cases
+
+## Best Practices
+
+### Schema Design
+
+- Keep schemas as simple as possible while meeting your needs
+- Use clear, descriptive property names and descriptions
+- Always specify required fields to prevent errors
+
+### Model Selection
+
+- Start with the default model and only change if you have specific requirements
+- Test thoroughly when switching models as behavior may vary
+- Consider cost implications of more powerful models
+
+### Skill Configuration
+
+- Write clear, specific descriptions that explain exactly when the skill should be used
+- Use examples in descriptions to help the LLM understand context
+- Test skill selection by trying various inputs that should trigger different skills
+
+## Getting Started with Advanced Configuration
+
+1. **Start Simple**: Begin with default settings and only modify what you specifically need
+2. **Test Thoroughly**: Always test your agent after making configuration changes
+3. **Document Changes**: Keep track of what you've modified and why
+4. **Iterate Gradually**: Make one change at a time to understand the impact
+
+Advanced configuration gives you powerful control over your agent's technical behavior, but remember that most successful agents work excellently with the default settings. Use these features when you have specific technical requirements or detailed workflow needs.

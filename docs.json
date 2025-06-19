@@ -36,7 +36,8 @@
                 "pages": [
                   "builder/behavior",
                   "builder/personalization",
-                  "builder/triggers"
+                  "builder/triggers",
+                  "builder/configuration"
                 ]
               },
               "builder/monetize",
