@@ -37,13 +37,13 @@
                   "builder/behavior",
                   "builder/personalization",
                   "builder/triggers",
-                  "builder/configuration",
-                  "builder/your_organization"
+                  "builder/configuration"
                 ]
               },
               "builder/monetize",
               "builder/attract",
-              "builder/engage"
+              "builder/engage",
+              "builder/your_organization"
             ]
           },
           {
