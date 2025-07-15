@@ -37,7 +37,8 @@
                   "builder/behavior",
                   "builder/personalization",
                   "builder/triggers",
-                  "builder/configuration"
+                  "builder/configuration",
+                  "builder/your_organization"
                 ]
               },
               "builder/monetize",
