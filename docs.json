@@ -76,8 +76,8 @@
     }
   },
   "logo": {
-    "light": "/logo/logoLight.svg",
-    "dark": "/logo/logoDark.svg"
+    "light": "/logo/AppyLogo4.svg",
+    "dark": "/logo/AppyLogoInvert1.svg"
   },
   "navbar": {
     "links": [
