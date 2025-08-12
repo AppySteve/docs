@@ -10,7 +10,7 @@
   "footer": {
     "socials": {
       "x": "https://x.com/aaronwhite",
-      "discord": "https://discord.com/channels/1362845797447631089/1362845798446141503",
+      "discord": "http://discord.gg/appyai",
       "linkedin": "https://www.linkedin.com/company/appypeople/"
     }
   },
@@ -64,7 +64,7 @@
       "anchors": [
         {
           "anchor": "Community",
-          "href": "https://discord.com/channels/1362845797447631089/1362845798446141503",
+          "href": "http://discord.gg/appyai",
           "icon": "discord"
         },
         {
