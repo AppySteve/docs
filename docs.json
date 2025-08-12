@@ -37,6 +37,7 @@
                   "builder/behavior",
                   "builder/personalization",
                   "builder/triggers",
+                  "builder/appearance",
                   "builder/configuration"
                 ]
               },
