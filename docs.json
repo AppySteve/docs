@@ -35,6 +35,7 @@
                 "group": "Build",
                 "pages": [
                   "builder/behavior",
+                  "builder/publish"
                   "builder/personalization",
                   "builder/triggers",
                   "builder/theme",
