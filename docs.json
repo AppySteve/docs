@@ -39,7 +39,7 @@
                   "builder/personalization",
                   "builder/triggers",
                   "builder/theme",
-                  "builder/profile",
+                  "builder/settings",
                   "builder/configuration"
                 ]
               },
