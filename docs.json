@@ -36,17 +36,17 @@
                 "pages": [
                   "builder/behavior",
                   "builder/publish",
-                  "builder/personalization",
+                  "builder/preferences",
                   "builder/triggers",
                   "builder/theme",
                   "builder/settings",
-                  "builder/configuration"
+                  "builder/configuration",
+                  "builder/your_organization"
                 ]
               },
               "builder/monetize",
               "builder/promote",
               "builder/engage",
-              "builder/your_organization"
             ]
           },
           {
