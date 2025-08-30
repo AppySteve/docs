@@ -1,0 +1,108 @@
+---
+title: "Integrations"
+description: "Integrations supercharge your AI agent with connections to subscribers' personal tools and accounts, enabling actions that go far beyond basic chatbots. It's like giving your agent access to each person's digital workspace so it can actually help them get things done."
+---
+
+## How Integrations Work
+
+<img
+  src="/images/Screenshot2025-08-30at2.50.16PM.png"
+  alt="Screenshot 2025-08-30 at 2.50.16 PM.png"
+  title="Screenshot 2025-08-30 at 2.50.16 PM.png"
+  style={{ width:"20%" }}
+/>
+
+You select which apps you want your agent to use from our pre-built integration library, and choose the actions you want your agent to be able to perform. We handle all the technical setup, authentication, and data formatting behind the scenes.
+
+Your subscribers can then connect their personal accounts (Gmail, Google Calendar, Airtable, etc.) directly through your agent during conversations. Once connected, your agent can read their emails, check their calendar, update their databases, and perform actions on their behalf - without you needing to manage any of the underlying API complexity.
+
+This means you can create powerful, personalized experiences that actually integrate with your users' existing workflows, all without touching a single line of integration code.
+
+<Note>
+  If you are looking for an integration not already available, contact support. Appy has hundreds of integrations ready to enable when a builder is ready to use them.
+</Note>
+
+## Integration Setup
+
+### Select an integration
+
+![add integrations.png](/images/addintegrations.png)
+
+- Open your agent builder and navigate to the Behavior section
+- Click on 'Add integration' in the right panel to see available integrations
+- Select the integration you want your agent to offer (Gmail, Google Calendar, Airtable, etc.)
+
+### Add Actions
+
+![integrations.png](/images/integrations.png)
+
+- Browse or search available actions and read their descriptions
+- Choose the actions that align with your agent's purpose
+- Select up to 20 actions from the available options (like "Fetch emails," "Create email draft," "Get contacts")
+- Click add to agent
+- Save to add the integration and actions
+
+<Note>
+  Make sure to closely consider actions including 'List' and 'Get'. \
+  \
+  Lists help your subscribers to access the integrated applications in common language (e.g. give me a list of all my Slack channels), rather than needing to provide information such as IDs to your agent.
+</Note>
+
+### Testing Your Setup
+
+Before going live, test the integration flow by connecting your own accounts and ensuring the agent can perform the actions you've configured.
+
+- Click on an integration
+- Add or remove actions
+- Add to agent and re-save
+
+<Note>
+  Include instructions for your agent that help your customers know how to use the integration.
+</Note>
+
+## The Subscriber Experience
+
+<img
+  src="/images/connect.png"
+  alt="connect.png"
+  title="connect.png"
+  style={{ width:"100%" }}
+/>
+
+When subscribers first request something that requires an integration:
+
+- Your agent will explain what it needs to connect
+- The subscriber clicks "Connect" to authorize the integration
+- They're redirected to the service (like Gmail) to grant permissions
+- Once authorized, they return to the conversation and your agent can immediately help
+
+### Managing Connections
+
+<img
+  src="/images/integrationscenter.png"
+  alt="integrations center.png"
+  title="integrations center.png"
+  style={{ width:"72%" }}
+/>
+
+Subscribers can manage all their connected integrations through the Integrations Center:
+
+- View all connected accounts in one place
+- Disconnect services they no longer want your agent to access
+- Reconnect accounts if permissions expire
+- See what actions your agent can perform with each integration
+
+This gives subscribers full control over their data and builds trust in your AI assistant.
+
+### Integration Security
+
+Depending on the integration, connections use secure OAuth authentication or secretely store an API key provider by the users- the AI never sees or stores your subscribers' passwords. Each integration only gets access to the specific actions you've configured, and subscribers can revoke access anytime.
+
+## Getting Started
+
+- Start simple - Add integrations you know well and that your agent will use for precise purposes
+- Configure 3-5 key actions rather than enabling everything at once 
+- Test thoroughly with your own accounts before launching 
+- Update your agent's instructions to mention the new capabilities it has with integrations 
+
+The most successful agents focus on solving one clear problem really well with integrations, opening up the door for their customers to new efficiency.
