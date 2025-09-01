@@ -40,6 +40,7 @@
                   "builder/preferences",
                   "builder/triggers",
                   "builder/theme",
+                  "builder/databases",
                   "builder/settings",
                   "builder/configuration",
                   "builder/your_organization"
