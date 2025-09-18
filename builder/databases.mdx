@@ -1,48 +1,93 @@
 ---
 title: "Databases"
-description: "Data tables turn your AI agent into a smart, organized assistant that remembers and structures important information for your customers. Think of it as giving your agent a perfect memory, structured by you to meet your customers' goals."
+description: "Data tables turn your AI agent into a real business application that stores important information for your customers. Structured, persistent data, brings lasting power to your agent's workflows."
 ---
 
-![Screenshot 2025-09-01 at 9.44.34 AM.png](/images/Screenshot2025-09-01at9.44.34AM.png)
+![Screenshot 2025-09-18 at 5.56.40 AM.png](/images/Screenshot2025-09-18at5.56.40AM.png)
 
 ## What Are Databases?
 
-Databases let your agent collect, store, and retrieve structured information during conversations. Instead of just remembering random details, your agent organizes data into clean, searchable tables that create lasting value for both you and your customers.
-
-## How Databases Work
-
-When you set up Data Tables, your agent automatically knows what information to collect and how to store it. As customers share details during conversations, your agent saves relevant data to the appropriate fields. Your customers can then recall and update their information directly through the agent chat - making your AI feel more like a personalized app than just a chatbot.
+Databases let your agent collect, store, and retrieve structured information across interactions. With simple Notion-style setup, you define the data tables and data fields for your agent. As the agent runs or your customer adds records, their database updates and powers their workflows and business outcomes.
 
 <Note>
-  In the near future, we'll let you give your customers access to their data right within the interface. Move from background memory to a functional app for them to edit and add data\!
+  Your databases are not centralized storage across all of your customers. You define the data structure, and then each customer has their own unique data.
 </Note>
+
+### Data control settings
+
+You choose the level of exposure your customer's have to the database:
+
+- **Level 1: Agent-Only Intelligence** - Your database works behind the scenes. Customers experience smarter interactions without seeing tables.
+- **Level 2: Read-Only Transparency** - Enable "Customers can view" to include data visualizations. Customers see their records and history, building trust through transparency.
+- **Level 3: Full Record Control** - Enable "Customer can edit records" for true application functionality. Customers can add, update, and manage their own data.
 
 ## Setting Up Your First Data Table
 
-1. **Navigate to Databases** in the build tab
+1. **Navigate to Database** in the build tab
 2. **Create a new table** and give it a descriptive name
-3. **Add fields** using the field types that match your data needs:
-   - Short text, Long text, Numbers, Currency, Percentages
-   - Dates, Phone numbers, Email addresses, URLs
-   - Checkboxes, Single select, Multiple select options
-4. **Add the  tag** to your agent instructions - this tells your agent to use the databases feature
+
+![Screenshot 2025-09-18 at 6.08.11 AM.png](/images/Screenshot2025-09-18at6.08.11AM.png)
+
+3. **Add fields** using the field types that match your data needs
+
+<img
+  src="/images/Screenshot2025-09-18at6.01.35AM.png"
+  alt="Screenshot 2025-09-18 at 6.01.35 AM.png"
+  title="Screenshot 2025-09-18 at 6.01.35 AM.png"
+  style={{ width:"81%" }}
+/>
+
+4. **Select the database control **you want to provide your customers through database settings
+
+   ![Screenshot 2025-09-18 at 6.15.16 AM.png](/images/Screenshot2025-09-18at6.15.16AM.png)
+5. **Add the tag** database (in curly brackets) to your agent instructions - this tells your agent to use the databases feature.
+
+<img
+  src="/images/Screenshot2025-09-18at6.09.40AM.png"
+  alt="Screenshot 2025-09-18 at 6.09.40 AM.png"
+  title="Screenshot 2025-09-18 at 6.09.40 AM.png"
+  style={{ width:"87%" }}
+/>
+
+6. **Add the tag** database (in curly brackets) to your agent instructions - this tells your agent to use the databases feature.
+7. **Preview your agent** and notice the data tables appear below "New Interaction"
+
+![Screenshot 2025-09-18 at 6.17.58 AM.png](/images/Screenshot2025-09-18at6.17.58AM.png)
+
+<Note>
+  Remember: you can choose whether or not to expose the databases to your customers. Toggle the "Customers can view" setting to show/hide the tables.
+</Note>
 
 ## When to use databases
 
-**Important Date Tracking**\
-Set up tables for birthdays, anniversaries, and special occasions. Your agent remembers when customers mention these dates and can proactively remind them or offer relevant services at the right time.
+Use databases any time your agent's behavior or skills produce or utilize structured information.
 
-**Client Relationship Management**\
-Track company details, decision makers, project timelines, and interaction history. Your agent builds a comprehensive client profile over time, making every conversation more personalized and informed.
+### Use Cases
 
-**Social Media Calendar Management**\
-Create structured content calendars with post dates, content types, platforms, and approval status. Your agent helps customers plan, organize, and track their social media strategy while keeping everything easily accessible.
+**For Consultants**: Track client projects with fields for deliverables, deadlines, status, and notes. Your agent becomes a lightweight project management system that actually gets used.
+
+**For Coaches**: Monitor client goals with progress percentages, milestone dates, and achievement checkboxes. Sessions become data-driven and outcomes trackable.
+
+**For Agencies**: Manage content calendars with post titles, publish dates, platforms, and performance metrics. Your agent orchestrates the entire content workflow.
+
+**For Course Creators**: Track student progress through modules, assignments, quiz scores, and completion rates. Personalized learning paths based on actual data.
+
+### Comparison to other features
+
+Your Appy.AI agent has three types of data storage, each serving different purposes:
+
+- The **memory tool **remembers behavioral patterns. For example, over many chats your agent learns that the customer prefers detailed explanations.
+- [**Preferences**](/builder/preferences)** **configure static, personalized settings that your customers set in onboarding. For example, they define interests and freqency for a report the agent will produce.
+- **Databases **are the ongoing business records produced by or provided to your agent. For example, one record for each sales lead captured and the information associated with that lead.
+
+While memory captures conversation patterns for continuity and preferences store user settings for personalization, databases manage structured business data that powers real applications.
 
 ## Getting Started
 
-- Think about both the data your agent will generate and the data it will interact with over multiple interactions
+- Identify the business data your agent needs to track
 - Create a data table and include the essential fields
-- Add 3-4 essential fields, add the database tag to your instructions
-- Test it with a few conversations to discover additional fields you and your customers want to collect.
+- Configure visibility and permissions based on your use case
+- Add the database tag to your agent instructions
+- Test with interactionsto discover additional fields you and your customers want to collect.
 
-You're on your way to giving your customers a perfect memory to store their work and make their lives easier\!
+You're on your way to giving your customers data that powers real business workflows and creates lasting value!
