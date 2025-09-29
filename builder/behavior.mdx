@@ -7,11 +7,11 @@ import ToolSnippet from '/snippets/tool-snippet.mdx';
 
 ![image.png](/images/image.png)
 
-## Your Agent's Brain and Tools
+## Your Agent's Instructions
 
 <iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/rC5fvI_biak?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
 
-The Instructions box is where you tell your agent what to do and how to behave. Write in plain English - no coding required\! This is like having a detailed conversation with a really smart assistant about exactly how you want them to help your customers.
+The Instructions box is where you tell your agent what to do and how to behave. Write in plain English - no coding required! This is like having a detailed conversation with a really smart assistant about exactly how you want them to help your customers.
 
 ### What to include:
 
@@ -37,6 +37,19 @@ The Instructions box is where you tell your agent what to do and how to behave. 
   - Mention any important rules or limitations
   - Write like you're training a new team member
 </Tip>
+
+### Smart References
+
+Within your instructions, you can @mention [preferences](/builder/preferences) or [databases](/builder/databases) you have created, as well as system variables like your customer's name or email address. Add these to your instructions to help your agent know precisely how to utilize these variables.
+
+<img
+  src="/images/Screenshot2025-09-29at9.36.42AM.png"
+  alt="Screenshot 2025-09-29 at 9.36.42 AM.png"
+  title="Screenshot 2025-09-29 at 9.36.42 AM.png"
+  style={{ width:"48%" }}
+/>
+
+## Tools and Skills
 
 On the right side, you'll see Skills & Tools - these give your agent the ability to actually do things beyond just chatting.
 
@@ -95,5 +108,5 @@ For skills, test just that specific task by clicking the preview skill <Icon ico
 4. **Refine and add skills** as needed for complex tasks
 
 <Tip>
-  Start simple and adjust based on testing\! It's easier to start with basic instructions and refine based on observation than to over-instruct to begin with.
+  Start simple and adjust based on testing! It's easier to start with basic instructions and refine based on observation than to over-instruct to begin with.
 </Tip>
