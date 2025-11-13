@@ -50,7 +50,7 @@
                 "group": "Monetize",
                 "pages": [
                   "builder/monetize",
-                  "builder/monetize/international"
+                  "builder/international"
                 ]
               },
               "builder/promote",
