@@ -46,7 +46,13 @@
                   "builder/your_organization"
                 ]
               },
-              "builder/monetize",
+              {
+                "group": "Monetize",
+                "pages": [
+                  "builder/monetize",
+                  "builder/monetize/international"
+                ]
+              },
               "builder/promote",
               "builder/engage"
             ]
