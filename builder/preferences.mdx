@@ -3,7 +3,12 @@ title: "Preferences"
 description: "Subscriber preferences let you collect specific information from each customer during onboarding, then use that information to customize every interaction with your agent. It's like having a personal assistant that remembers exactly what each person needs. "
 ---
 
-<iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/L7bK70NP8LU?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+<img
+  src="/images/Screenshot2025-12-15at10.10.18AM.png"
+  alt="Screenshot 2025 12 15 At 10 10 18 AM"
+  title="Screenshot 2025 12 15 At 10 10 18 AM"
+  style={{ width:"83%" }}
+/>
 
 ## How Preferences Work
 
@@ -21,54 +26,6 @@ Imagine you're building an agent that helps people find shelter kittens for adop
 - Any special needs they can accommodate
 
 Now every time they use your agent, it already knows their preferences and can immediately search for cats that match their criteria.
-
-## Creating Preferences
-
-Click "Create new setting" to add a preference that users will provide during onboarding.
-
-<img
-  src="/images/Screenshot2025-07-23at12.32.42PM.png"
-  alt="Screenshot2025 07 23at12 32 42PM Pn"
-  title="Screenshot2025 07 23at12 32 42PM Pn"
-  style={{ width:"76%" }}
-/>
-
-### Preference Options
-
-- **Group**: Organize related settings together for a cleaner onboarding experience
-- **Name**: Create the label that your customer will see (e.g. Zip Code, or "What is your location?")
-- **Type**: Choose from text, dropdown, number, or other input types
-- **Description**: Provide instructions that will help your customers understand what to enter
-- **Default Value**: Pre-fill common answers to make onboarding faster
-- **Help URL**: Link to additional explanation if needed
-- **Required**: Select if customers must provide this information to continue
-
-<Note>
-  Your users see all preferences during their onboarding, and must completed required preferences before using their agent
-</Note>
-
-## Instructing the Agent
-
-Include a simple tag in your agent's behavior so that it knows to reference these preferences.\
-Type @ and use the dropdown list or click the curly brackets in the text editor. \
-\
-**Add @User Preferences for the agent to reference all preferences.**
-
-<img
-  src="/images/Screenshot2025-09-29at9.09.07AM.png"
-  alt="Screenshot 2025-09-29 at 9.09.07 AM.png"
-  title="Screenshot 2025-09-29 at 9.09.07 AM.png"
-  style={{ width:"65%" }}
-/>
-
-**Select a specific preference to more narrowly focus**
-
-<img
-  src="/images/Screenshot2025-09-29at9.15.43AM.png"
-  alt="Screenshot 2025-09-29 at 9.15.43 AM.png"
-  title="Screenshot 2025-09-29 at 9.15.43 AM.png"
-  style={{ width:"79%" }}
-/>
 
 ## Types of Preferences
 
@@ -100,6 +57,55 @@ Here are just a few ideas for preferences to collect from you subscribers:
 Once you've set up preferences, new customers will see required settings during their onboarding. They can update their preferences anytime in their account settings, and the changes will immediately affect how your agent responds to them.
 
 Your agent automatically has access to all of this personalized information in every conversation, making each interaction feel tailored specifically to that user.
+
+## Configure with Violet (Chat)
+
+Ask Violet to set up preferences:
+
+- "Create a preference for the user's location and make it required"
+- "Add a dropdown preference for industry with options: Tech, Healthcare, Finance, Retail"
+- "Set up preferences to collect budget range and company size during onboarding"
+- "Make sure my agent references the user's preferred communication style in every interaction"
+
+Violet creates the preferences, configures field types and options, and updates your agent instructions to reference them.
+
+## Configure Manually
+
+Access preferences directly through **Preferences**:
+
+Click the **\+** to add a preference that users will provide during onboarding.
+
+![Screenshot 2025 12 15 At 10 14 15 AM](/images/Screenshot2025-12-15at10.14.15AM.png)
+
+### Preference Options
+
+- **Group**: Organize related settings together for a cleaner onboarding experience
+- **Name**: Create the label that your customer will see (e.g. Zip Code, or "What is your location?")
+- **Type**: Choose from text, dropdown, number, or other input types
+- **Description**: Provide instructions that will help your customers understand what to enter
+- **Default Value**: Pre-fill common answers to make onboarding faster
+- **Help URL**: Link to additional explanation if needed
+- **Required**: Select if customers must provide this information to continue
+
+<Note>
+  Your users see all preferences during their onboarding, and must completed required preferences before using their agent
+</Note>
+
+## Instructing the Agent
+
+Include a simple tag in your agent's behavior so that it knows to reference these preferences. Type @ and use the dropdown list or click the curly brackets in the text editor.
+
+**Add @User Preferences for the agent to reference all preferences.**\
+**Select a specific preference to more narrowly focus**
+
+<img
+  src="/images/Screenshot2025-12-15at10.15.53AM.png"
+  alt="Screenshot 2025 12 15 At 10 15 53 AM"
+  title="Screenshot 2025 12 15 At 10 15 53 AM"
+  style={{ width:"65%" }}
+/>
+
+<iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/L7bK70NP8LU?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
 
 ## Getting Started
 

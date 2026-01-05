@@ -7,8 +7,8 @@ description: "Integrations supercharge your AI agent with connections to subscri
 
 <img
   src="/images/Screenshot2025-08-30at2.50.16PM.png"
-  alt="Screenshot 2025-08-30 at 2.50.16 PM.png"
-  title="Screenshot 2025-08-30 at 2.50.16 PM.png"
+  alt="Screenshot 2025-08-30 at 2.50.16 PM.png"
+  title="Screenshot 2025-08-30 at 2.50.16 PM.png"
   style={{ width:"20%" }}
 />
 
@@ -18,44 +18,6 @@ Your subscribers can then connect their personal accounts (Gmail, Google Calenda
 
 <Note>
   If you are looking for an integration not already in Appy.AI, contact support. Appy has hundreds of integrations ready to enable.
-</Note>
-
-## Integration Setup
-
-### Select an integration
-
-![add integrations.png](/images/addintegrations.png)
-
-- Open your agent builder and navigate to the Behavior section
-- Click on 'Add integration' in the right panel to see available integrations
-- Select the integration you want your agent to offer (Gmail, Google Calendar, Airtable, etc.)
-
-### Add Actions
-
-![integrations.png](/images/integrations.png)
-
-- Browse or search available actions and read their descriptions
-- Choose the actions that align with your agent's purpose
-- Select up to 20 actions from the available options (like "Fetch emails," "Create email draft," "Get contacts")
-- Click add to agent
-- Save to add the integration and actions
-
-<Note>
-  Make sure to closely consider actions including 'List' and 'Get'. \
-  \
-  Lists help your subscribers to access the integrated applications in common language (e.g. give me a list of all my Slack channels), rather than needing to provide information such as IDs to your agent.
-</Note>
-
-### Testing Your Setup
-
-Before going live, test the integration flow by connecting your own accounts and ensuring the agent can perform the actions you've configured.
-
-- Click on an integration
-- Add or remove actions
-- Add to agent and re-save
-
-<Note>
-  Include instructions for your agent that help your customers know how to use the integration.
 </Note>
 
 ## The Subscriber Experience
@@ -95,6 +57,56 @@ This gives subscribers full control over their data and builds trust in your AI 
 ### Integration Security
 
 Depending on the integration, connections use secure OAuth authentication or securely store an API key provided by the users - the AI never sees or stores your subscribers' passwords. Each integration only gets access to the specific actions you've configured, and subscribers can revoke access anytime.
+
+## Configure with Violet (Chat)
+
+Ask Violet to set up integrations:
+
+- "Add Gmail integration so my agent can read and send emails for users"
+- "Enable Google Calendar with actions to create events and check availability"
+- "Add Slack integration with the ability to send messages and list channels"
+- "Update my Webflow integration to also allow Site Publishes"
+- "Remove the Airtable integration, we don't need it anymore"
+
+Violet adds the integration, suggests relevant actions based on your agent's purpose, and updates your configuration.
+
+## Configure Manually
+
+Access integration settings directly through **Behavior-\> Add Integrations**
+
+![Screenshot 2025 12 15 At 9 33 17 AM](/images/Screenshot2025-12-15at9.33.17AM.png)
+
+- Open your agent builder and navigate to the Behavior section
+- Click on 'Add integration' in the right panel to see available integrations
+- Select the integration you want your agent to offer (Gmail, Google Calendar, Airtable, etc.)
+
+### Add Actions
+
+![integrations.png](/images/integrations.png)
+
+- Browse or search available actions and read their descriptions
+- Choose the actions that align with your agent's purpose
+- Select up to 20 actions from the available options (like "Fetch emails," "Create email draft," "Get contacts")
+- Click add to agent
+- Save to add the integration and actions
+
+<Note>
+  Make sure to closely consider actions including 'List' and 'Get'.
+
+  Lists help your subscribers to access the integrated applications in common language (e.g. give me a list of all my Slack channels), rather than needing to provide information such as IDs to your agent.
+</Note>
+
+### Testing Your Setup
+
+Before going live, test the integration flow by connecting your own accounts and ensuring the agent can perform the actions you've configured.
+
+- Click on an integration
+- Add or remove actions
+- Add to agent and re-save
+
+<Note>
+  Include instructions for your agent that help your customers know how to use the integration.
+</Note>
 
 ## Getting Started
 

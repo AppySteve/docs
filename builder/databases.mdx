@@ -3,7 +3,9 @@ title: "Databases"
 description: "Data tables turn your AI agent into a real business application that stores important information for your customers. Structured, persistent data, brings lasting power to your agent's workflows."
 ---
 
-![Screenshot 2025-09-18 at 5.56.40 AM.png](/images/Screenshot2025-09-18at5.56.40AM.png)
+![Screenshot 2025-12-11 at 9.46.36 AM.png](/images/Screenshot2025-12-11at9.46.36AM.png)
+
+![Screenshot 2025-12-11 at 9.46.55 AM.png](/images/Screenshot2025-12-11at9.46.55AM.png)
 
 ## What Are Databases?
 
@@ -20,36 +22,6 @@ You choose the level of exposure your customer's have to the database:
 - **Level 1: Agent-Only Intelligence** - Your database works behind the scenes. Customers experience smarter interactions without seeing tables.
 - **Level 2: Read-Only Transparency** - Enable "Customers can view" to include data visualizations. Customers see their records and history, building trust through transparency.
 - **Level 3: Full Record Control** - Enable "Customer can edit records" for true application functionality. Customers can add, update, and manage their own data.
-
-## Setting Up Your First Data Table
-
-1. **Navigate to Database** in the build tab
-2. **Create a new table** and give it a descriptive name
-
-![Screenshot 2025-09-18 at 6.08.11 AM.png](/images/Screenshot2025-09-18at6.08.11AM.png)
-
-3. **Add fields** using the field types that match your data needs
-
-<img
-  src="/images/Screenshot2025-09-18at6.01.35AM.png"
-  alt="Screenshot 2025-09-18 at 6.01.35 AM.png"
-  title="Screenshot 2025-09-18 at 6.01.35 AM.png"
-  style={{ width:"81%" }}
-/>
-
-4. Select the level of **database control** you want to provide your customers through database settings
-
-   ![Screenshot 2025-09-18 at 6.15.16 AM.png](/images/Screenshot2025-09-18at6.15.16AM.png)
-5. **Reference fields** in your database into your agent instructions so the agent know how to relate to the data. Use @ mentions to show a list of your data tables and fields, or select the curly brackets in the text editor toolbar.
-
-   ![Screenshot 2025-09-29 at 9.23.28 AM.png](/images/Screenshot2025-09-29at9.23.28AM.png)
-6. **Preview your agent** and notice the data tables appear below "New Interaction"
-
-![Screenshot 2025-09-18 at 6.17.58 AM.png](/images/Screenshot2025-09-18at6.17.58AM.png)
-
-<Note>
-  Remember: you can choose whether or not to expose the databases to your customers. Toggle the "Customers can view" setting to show/hide the tables.
-</Note>
 
 ## When to use databases
 
@@ -70,10 +42,62 @@ Use databases any time your agent's behavior or skills produce or utilize struct
 Your Appy.AI agent has three types of data storage, each serving different purposes:
 
 - The **memory tool** remembers behavioral patterns. For example, over many chats your agent learns that the customer prefers detailed explanations.
-- [**Preferences**](/builder/preferences) configure static, personalized settings that your customers set in onboarding. For example, they define interests and freqency for a report the agent will produce.
+- [**Preferences**](/builder/preferences) configure static, personalized settings that your customers set in onboarding. For example, they define interests and frequency for a report the agent will produce.
 - **Databases** are the ongoing business records produced by or provided to your agent. For example, one record for each sales lead captured and the information associated with that lead.
 
 While memory captures conversation patterns for continuity and preferences store user settings for personalization, databases manage structured business data that powers real applications.
+
+## Configure with Violet (Chat)
+
+Ask Violet to set up your databases:
+
+- "Create a table to track client projects with fields for name, deadline, status, and budget"
+- "Add a sales leads database with company name, contact person, and deal size"
+- "Make my project tracker visible to customers so they can add their own records"
+- "Reference the client name from my customer database in the agent instructions"
+
+Violet creates the table structure, adds fields, configures visibility settings, and ensures your agent knows how to use the data.
+
+## Configure Manually
+
+Access database settings directly through **Databases**:
+
+<img
+  src="/images/Screenshot2025-12-15at9.17.01AM.png"
+  alt="Screenshot 2025 12 15 At 9 17 01 AM"
+  title="Screenshot 2025 12 15 At 9 17 01 AM"
+  style={{ width:"83%" }}
+/>
+
+## Setting Up Your First Data Table
+
+1. **Navigate to Database**
+2. **Create a new table** and give it a descriptive name
+
+![Screenshot 2025-09-18 at 6.08.11 AM.png](/images/Screenshot2025-09-18at6.08.11AM.png)
+
+3. **Add fields** using the field types that match your data needs
+
+<img
+  src="/images/Screenshot2025-09-18at6.01.35AM.png"
+  alt="Screenshot 2025-09-18 at 6.01.35 AM.png"
+  title="Screenshot 2025-09-18 at 6.01.35 AM.png"
+  style={{ width:"81%" }}
+/>
+
+4. Select the level of **database control** you want to provide your customers through database settings
+
+   ![Screenshot 2025-09-18 at 6.15.16 AM.png](/images/Screenshot2025-09-18at6.15.16AM.png)
+5. **Reference fields** in your database into your agent instructions so the agent know how to relate to the data. Use @ mentions to show a list of your data tables and fields, or select the curly brackets in the text editor toolbar.
+
+   ![Screenshot 2025-09-29 at 9.23.28 AM.png](/images/Screenshot2025-09-29at9.23.28AM.png)
+6. **Preview your agent** and notice the data tables appear below "New Interaction"
+
+![Screenshot 2025-09-18 at 6.17.58 AM.png](/images/Screenshot2025-09-18at6.17.58AM.png)
+
+<Note>
+  Remember: you can choose whether or not to expose the databases to your customers. Toggle the "Customers can view" setting to show/hide the tables.
+</Note>
 
 ## Getting Started
 
@@ -81,6 +105,6 @@ While memory captures conversation patterns for continuity and preferences store
 - Create a data table and include the essential fields
 - Configure visibility and permissions based on your use case
 - @mention your database fields in your agent instructions
-- Test with interactionsto discover additional fields you and your customers want to collect.
+- Test with interactions to discover additional fields you and your customers want to collect.
 
 You're on your way to giving your customers data that powers real business workflows and creates lasting value!

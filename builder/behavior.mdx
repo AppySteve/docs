@@ -1,22 +1,17 @@
 ---
 title: "Behavior"
-description: "The Behavior section is where you define what your agent does and how it acts. Think of this as giving your agent its personality, goals, and superpowers all in one place."
+description: "Your agent's behavior is defined in plain english - no code, just instructions on what it is supposed to do and how. Additional tools help it complete its job successfully."
 ---
-
-import ToolSnippet from '/snippets/tool-snippet.mdx';
 
 ## Your Agent's Instructions
 
-<iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/rC5fvI_biak?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+Through your initial chat conversation, Violet provided your agent a set of instructions:
 
-The Instructions box is where you tell your agent what to do and how to behave. Write in plain English - no coding required! This is like having a detailed conversation with a really smart assistant about exactly how you want them to help your customers.
-
-### What to include:
-
-- **What your agent does**: Clearly explain the main purpose and goals
-- **How it should behave**: Define the tone, personality, and approach
-- **Step-by-step processes**: Walk through your methodology or workflow
-- **Important context**: Include key information your agent needs to know
+- **What your agent does**: The main purpose and goals
+- **How it should behave**: The tone, personality, and approach
+- **Step-by-step processes**: Your methodology or workflow
+- **Important context**: Key information your agent needs to know
+- **Smart references**: Connection to fields in your databases and your preferences to support structured use of data
 
 <img
   src="/images/Screenshot2025-07-23at12.19.32PM.png"
@@ -25,31 +20,20 @@ The Instructions box is where you tell your agent what to do and how to behave. 
   style={{ width:"80%" }}
 />
 
-<Tip>
-  In the example above, the builder has given clear instructions for an article summary agent\
-  \
-  **Tips for Great Instructions**
-
-  - Be specific about what you want your agent to accomplish
-  - Include examples of good responses when possible
-  - Mention any important rules or limitations
-  - Write like you're training a new team member
-</Tip>
-
 ### Smart References
 
-Within your instructions, you can @mention [preferences](/builder/preferences) or [databases](/builder/databases) you have created, as well as system variables like your customer's name or email address. Add these to your instructions to help your agent know precisely how to utilize these variables.
+Within your instructions, we @mention [preferences](/builder/preferences) or [databases](/builder/databases) you have created, as well as system variables like your customer's name or email address. Adding these to your instructionshelps your agent know precisely how to utilize these variables.
 
 <img
   src="/images/Screenshot2025-09-29at9.36.42AM.png"
-  alt="Screenshot 2025-09-29 at 9.36.42 AM.png"
-  title="Screenshot 2025-09-29 at 9.36.42 AM.png"
+  alt="Screenshot 2025-09-29 at 9.36.42 AM.png"
+  title="Screenshot 2025-09-29 at 9.36.42 AM.png"
   style={{ width:"48%" }}
 />
 
 ## Tools and Skills
 
-On the right side, you'll see Skills & Tools - these give your agent the ability to actually do things beyond just chatting.
+In addition to its broad instructions, your agent has Skill and Tools - these give your agent the ability to do things beyond just chatting.
 
 <img
   src="/images/Screenshot2025-07-23at12.18.26PM.png"
@@ -72,7 +56,7 @@ We provide some default tools to begin with, like 'userChat', 'fileSystem,' 'goo
 
 ### Skills: Your Custom Capabilities
 
-Skills are custom capabilities you create when you need your agent to do something specific that requires detailed instructions. Create a new skill when:
+Skills are custom capabilities created when you need your agent to do something specific that requires detailed instructions. Create a new skill when:
 
 - You have a complex sub-process that needs lots of detailed guidance
 - You want to isolate a specific, repeatable task
@@ -90,13 +74,36 @@ Think of skills as specialized tasks your agent can do - like "analyze a busines
 
 Your agent reads its instructions, then automatically decides which skills and tools to use based on what the user needs. You don't have to manage when or how - just give good instructions and select the right capabilities.
 
+## Configure with Violet (Chat)
+
+Ask Violet to refine your agent's behavior:
+
+- "My agent should help users analyze financial reports. It needs to be professional and data-focused."
+- "I don't like how it starts a conversation. Can you have it always give a warm greeting that reminds users of its purpose."
+- "Create a skill for summarizing research papers"
+- "Make my agent more conversational and friendly in tone"
+- "Reference the user's preferred industry from their preferences in every interaction"
+
+Violet updates your instructions, adds tools and skills, and helps you refine the behavior through conversation.
+
+## Configure Manually
+
+![Screenshot 2025-12-11 at 9.29.33 AM.png](/images/Screenshot2025-12-11at9.29.33AM.png)
+
+Access instructions, skills, and tools directly through **Behavior**:
+
+1. Write or edit your agent's **Instructions** in plain English
+2. Use **@mentions** to reference preferences, databases, or system variables
+3. Click **Add Tool** to select from available built-in tools
+4. Click **Create Skill** to add custom capabilities with detailed instructions
+5. Click the chevron <Icon icon="square-chevron-left" /> below Publish for [advanced configuration options](/builder/configuration) like selecting your LLM model
+6. Use **Preview** to test your agent's behavior
+
 ## Testing Agent Behavior
 
-Testing your agent is always one click away. Click the "Preview" button to open a separate tab and begin using your agent. You can make real time adjustments to behavior, skills, and tools and see how it impacts the preview.
+![Screenshot 2025-12-11 at 9.34.34 AM.png](/images/Screenshot2025-12-11at9.34.34AM.png)
 
-For skills, test just that specific task by clicking the preview skill <Icon icon="eye" /> icon in the toolbar.
-
-<iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/wTYzzpRSo6M?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+Testing your agent is always one click away. Select a menu item or start chatting to begin using your agent. You can make real time adjustments to behavior, skills, and tools and see how it impacts the preview.
 
 ## Getting Started
 
