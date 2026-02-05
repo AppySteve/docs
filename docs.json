@@ -10,7 +10,7 @@
   "footer": {
     "socials": {
       "x": "https://x.com/aaronwhite",
-      "discord": "http://discord.gg/appyai",
+      "discord": "https://discord.gg/appyai",
       "linkedin": "https://www.linkedin.com/company/appypeople/"
     }
   },
@@ -24,7 +24,8 @@
             "group": "Get Started",
             "pages": [
               "index",
-              "quickstart"
+              "quickstart",
+              "pricing"
             ]
           },
           {
@@ -46,7 +47,13 @@
                   "builder/your_organization"
                 ]
               },
-              "builder/monetize",
+              {
+                "group": "Monetize",
+                "pages": [
+                  "builder/monetize",
+                  "builder/international"
+                ]
+              },
               "builder/promote",
               "builder/engage"
             ]
