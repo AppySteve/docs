@@ -39,6 +39,7 @@
                   "builder/integrations",
                   "builder/publish",
                   "builder/preferences",
+                  "builder/knowledge",
                   "builder/triggers",
                   "builder/theme",
                   "builder/databases",
