@@ -1,11 +1,60 @@
 ---
-title: "Publish"
-description: "Publishing controls when your changes go live to customers. You can safely modify any aspect of your agent - behavior, skills, personalization, or triggers - and test everything thoroughly before your customers see the updates. "
+title: "Share & Publish"
+description: "Control how people access your agent. Share with beta testers before launch, or publish to make your agent available to subscribers - free or paid."
 ---
 
-## Safe Development Workflow
+## Distribution options
 
-**1. Make Changes in Draft** Modify any aspect of your agent while in draft mode:
+AppyAI offers three ways to distribute your agent:
+
+| Mode | Who uses it | Authentication | Payment | Plan required |
+|------|-------------|----------------|---------|---------------|
+| **Beta share** | Testers | None | None | Any |
+| **Free subscribers** | Customers | Required | None | Pro+ |
+| **Paid subscribers** | Customers | Required | Required | Scale |
+
+## Share for beta testing
+
+Before publishing, you can share your agent with anyone for testing and feedback. Testers access your agent via a share link - no account creation required.
+
+**How to share:**
+1. Toggle sharing on in your agent settings
+2. Copy the share URL
+3. Send to friends, colleagues, or beta testers
+
+<Note>
+  Shared agents are for testing only. Testers won't have accounts, preferences, or interaction history.
+</Note>
+
+## Publish your agent
+
+Publishing makes your agent available at your custom URL (`yoursubdomain.appy.ai`). Subscribers create accounts and get the full experience with personalization, interaction history, and support.
+
+### Free agents (Pro and Scale plans)
+
+Publish without setting up monetization. Subscribers authenticate and create accounts but don't pay.
+
+1. Build and test your agent in draft mode
+2. Publish your agent
+3. Promote via your custom agent URL
+4. Subscribers sign up and start using your agent
+
+### Paid agents (Scale plan only)
+
+Add monetization to charge for access. Requires Stripe setup.
+
+1. Build and test your agent in draft mode
+2. [Set up monetization](/builder/monetize) via Stripe
+3. Set your pricing (monthly, annual, free trials)
+4. Publish your agent
+5. Promote via your custom agent URL
+6. Subscribers authenticate, pay, and create accounts
+
+## Safe development workflow
+
+**1. Make changes in draft** 
+
+Modify any aspect of your agent while in draft mode:
 
 - **Behavior**: Update instructions, tools, skills, and integrations
 - **Skills**: Update instructions and associated tools
@@ -18,64 +67,50 @@ description: "Publishing controls when your changes go live to customers. You ca
 
 **Preview** your changes in a safe environment that mimics the real customer experience without affecting live users.
 
-**3. Publish When Ready**
+**3. Publish when ready**
 
 Hit **Publish** to make your changes live for customers, with optional release notes to communicate updates.
 
 <img
   src="/images/Screenshot2025-08-12at3.08.21PM.png"
-  alt="Screenshot 2025-08-12 at 3.08.21 PM.png"
-  title="Screenshot 2025-08-12 at 3.08.21 PM.png"
+  alt="Screenshot 2025-08-12 at 3.08.21 PM.png"
+  title="Screenshot 2025-08-12 at 3.08.21 PM.png"
   style={{ width:"31%" }}
 />
 
-## Version Control & Release Notes
+## Version control & release notes
 
-**Track All Changes**
+**Track all changes**
 
 Every publish creates a new version with a complete change log. You can see exactly what modified between versions - whether it's behavior updates, new skills, or appearance changes.
 
-**Customer Communication**
+**Customer communication**
 
 When publishing updates, add release notes to keep your customers informed about improvements and new features. This builds trust and helps customers understand new capabilities.
 
 <img
   src="/images/Screenshot2025-08-12at3.08.11PM.png"
-  alt="Screenshot 2025-08-12 at 3.08.11 PM.png"
-  title="Screenshot 2025-08-12 at 3.08.11 PM.png"
+  alt="Screenshot 2025-08-12 at 3.08.11 PM.png"
+  title="Screenshot 2025-08-12 at 3.08.11 PM.png"
   style={{ width:"31%" }}
 />
 
 ## States
 
+**Shared**\
+Your agent is available via share link for beta testing. Testers don't need accounts.
+
 **Unpublished**\
 Your agent starts unpublished, allowing unlimited experimentation without affecting customer experience. Make changes to behavior, add new tools, adjust triggers, or modify appearance before available to customers.
 
 **Published**\
-Once published, your agent becomes available to customers at your unique URL. Published agents can accept subscriptions and process payments, making this your production environment.
+Once published, your agent becomes available to subscribers at your unique URL. Depending on your plan and settings, published agents can be free or accept subscriptions and process payments.
 
-**Pending Changes**\
+**Pending changes**\
 Your initial published version remains available to customers while you make changes to your agent. When you chose to publish again, your customers are notified of the updates and see your new version.
 
-## Getting Started
-
-**For New Agents**
-
-1. Build and test your agent thoroughly in draft mode
-2. Complete billing setup and pricing configuration
-3. Publish your first version to start accepting customers
-
-**For Existing Agents**
-
-1. Make changes confidently in draft mode
-2. Use preview to validate updates
-3. Prepare release notes highlighting customer benefits
-4. Publish when ready, knowing you can roll back if needed
-
-Your publishing workflow ensures customers always receive a polished, tested experience while giving you the freedom to iterate and improve continuously.
-
 <Tip>
-  **Publishing Cadence**
+  **Publishing cadence**
 
   - **Bug fixes**: Publish immediately after testing
   - **Minor improvements**: Bundle into regular updates
