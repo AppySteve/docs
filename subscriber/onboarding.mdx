@@ -5,7 +5,15 @@ description: "Your subscribers get a seamless, professional onboarding experienc
 
 ![Sign In Pn](/images/SignIn.png)
 
-## Effortless Authentication
+The onboarding flow varies based on how the builder has configured their agent:
+
+| Access type | Account creation | Payment |
+|-------------|------------------|---------|
+| **Beta tester** (share link) | Not required | Not required |
+| **Free subscriber** | Required | Not required |
+| **Paid subscriber** | Required | Required |
+
+## Effortless authentication
 
 - **Multiple Login Options**: Subscribers can sign in with Google for instant access or use traditional email/password authentication.
 - **Email Verification**: Automatic email verification ensures account security and reduces spam signups.
@@ -35,8 +43,12 @@ description: "Your subscribers get a seamless, professional onboarding experienc
       style={{ width:"46%" }}
     />
   </Step>
-  <Step title="Step 3: Plan Selection">
+  <Step title="Step 3: Plan Selection (paid agents only)">
     Clear pricing display with your configured subscription options, trial periods, and transparent billing information.
+
+    <Note>
+      Free agent subscribers skip this step.
+    </Note>
 
     <img
       src="/images/selectPlan.png"
@@ -45,8 +57,12 @@ description: "Your subscribers get a seamless, professional onboarding experienc
       style={{ width:"45%" }}
     />
   </Step>
-  <Step title="Step 4: Secure Payment Processing">
+  <Step title="Step 4: Secure Payment Processing (paid agents only)">
     Professional Stripe-powered checkout with multiple payment methods (card, Cash App Pay) and secure 1-click checkout options.
+
+    <Note>
+      Free agent subscribers skip this step.
+    </Note>
 
     <img
       src="/images/payment.png"
