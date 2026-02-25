@@ -35,6 +35,23 @@ Set your agent to run automatically at regular intervals - perfect for ongoing t
 - **Frequency**: Daily, weekly, or monthly execution
 - **Timezone**: Automatically uses your account timezone (MDT shown in example)
 
+## HTTP/Webhook
+
+Let external tools and automations trigger your agent by sending an HTTP POST request. Perfect for connecting your agent to workflows in other tools, or custom scripts — so your agent can kick off automatically when something happens in another system.
+
+<Frame>
+  ![Screenshot 2026 02 25 At 9 11 31 AM](/images/Screenshot2026-02-25at9.11.31AM.png)
+</Frame>
+
+**Use Case Example:** A lead qualification agent that runs automatically whenever a new contact is added to your CRM.
+
+**Webhook Options**
+
+- **Default Task:** Set a fallback instruction for your agent when no task is included in the request body. Each subscriber can override this in their own requests.
+- **Webhook URL:** Each subscriber gets their own unique URL, found in their agent preferences. You'll also get a testing URL in the Triggers panel after saving and publishing.
+- **Test Trigger:** Send a test request to verify your webhook is working.
+- **Rotate Token:** Subscribers can regenerate their webhook URL if needed for security.
+
 ## Email Triggers
 
 <Warning>
