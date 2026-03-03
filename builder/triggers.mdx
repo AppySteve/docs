@@ -1,110 +1,90 @@
 ---
 title: "Triggers"
 description: "Triggers determine how and when your agent starts working. You can set up your agent to respond to user requests or run automatically on a schedule."
+hidden: true
 ---
 
-## User Initiated
+Triggers control how and when your agents start working. Think of them as different entry points — some let users start conversations on demand, others run automatically on a schedule, and some connect to external systems that kick off work when something happens.
 
-<img
-  src="/images/Screenshot2025-12-10at10.46.20AM.png"
-  alt="Screenshot 2025-12-10 at 10.46.20 AM.png"
-  title="Screenshot 2025-12-10 at 10.46.20 AM.png"
-  style={{ width:"44%" }}
-/>
+## How triggers work
 
-This is the default trigger that lets customers manually start conversations or tasks with your agent. Perfect for chat-based agents where users come with questions or need help with something specific.
+Each trigger type is a different way to activate your agent. You can enable the ones you need and ignore the rest. Most agents use multiple triggers — for example, an agent might respond to messages on demand but also run a weekly summary automatically.
+
+The key is choosing triggers that match how you want your agent to work. Enable what you need, mix and match, and your agent will be ready when the work comes in.
+
+## Types of triggers
+
+### On demand
+
+This is the default trigger that lets users message your agent anytime through Slack or the web interface. It's perfect for conversational agents where users come with questions or need help with something specific.
 
 Most agents use this trigger since it allows for natural back-and-forth conversations whenever users need assistance.
 
-## Recurring Schedule
+### Recurring schedule
 
-<img
-  src="/images/Screenshot2025-12-10at10.48.01AM.png"
-  alt="Screenshot 2025-12-10 at 10.48.01 AM.png"
-  title="Screenshot 2025-12-10 at 10.48.01 AM.png"
-  style={{ width:"42%" }}
-/>
+Set your agent to run automatically at regular intervals. This is perfect for routine tasks like monitoring, reporting, or maintenance work that needs to happen on a predictable schedule.
 
-Set your agent to run automatically at regular intervals - perfect for ongoing tasks like monitoring, reporting, or routine maintenance.
+You can configure:
+- **Date & time** — When to start the recurring schedule
+- **Frequency** — Daily, weekly, or monthly execution
+- **Timezone** — Automatically uses your account timezone
 
-**Use Case Example**: A news summarization agent that runs every morning to compile and send daily industry updates.
+**Example:** A business coach might set up a weekly check-in agent that runs every Monday morning to send personalized progress updates to clients.
 
-### Schedule Options
+### HTTP / Webhook
 
-- **Date & Time**: Choose when to start the recurring schedule
-- **Frequency**: Daily, weekly, or monthly execution
-- **Timezone**: Automatically uses your account timezone (MDT shown in example)
+Let external systems trigger your agent by sending an HTTP POST request. This is perfect for connecting your agent to other tools like Zapier, Make, CRMs, or custom scripts.
 
-## HTTP/Webhook
+When you enable this trigger, you get a unique webhook URL. Any system that can send a POST request can trigger your agent by hitting that URL with a task in the request body.
 
-Let external tools and automations trigger your agent by sending an HTTP POST request. Perfect for connecting your agent to workflows in other tools, or custom scripts — so your agent can kick off automatically when something happens in another system.
+**Example:** A marketing agency might connect their CRM to trigger a lead qualification agent automatically whenever a new contact is added.
 
-<Frame>
-  ![Screenshot 2026 02 25 At 9 11 31 AM](/images/Screenshot2026-02-25at9.11.31AM.png)
-</Frame>
+**Webhook format:**
+```
+POST https://builder.appy.ai/api/trigger/http/{unique-id}
+Content-Type: application/json
 
-**Use Case Example:** A lead qualification agent that runs automatically whenever a new contact is added to your CRM.
+{
+  "task": "Your task here"
+}
+```
 
-**Webhook Options**
+You can set a **Default Task** that runs when no task is included in the request body. This gives you a fallback so your agent always knows what to do.
 
-- **Default Task:** Set a fallback instruction for your agent when no task is included in the request body. Each subscriber can override this in their own requests.
-- **Webhook URL:** Each subscriber gets their own unique URL, found in their agent preferences. You'll also get a testing URL in the Triggers panel after saving and publishing.
-- **Test Trigger:** Send a test request to verify your webhook is working.
-- **Rotate Token:** Subscribers can regenerate their webhook URL if needed for security.
+## Real-world examples
 
-## Email Triggers
+Here's how different businesses combine triggers:
 
-<Warning>
-  Email triggers are temporarily unavailable. We plan to have these available again soon.
-</Warning>
+**Marketing agency** — On Demand (for client questions) + Webhook (triggered from CRM when new leads come in)
 
-Turn any email into an agent activation. When someone sends an email to your agent's unique address, it automatically triggers a new execution using the email content as input.
+**Business coach** — On Demand (for client conversations) + Recurring Schedule (weekly check-ins every Monday)
 
-**Email Address**: AppyAI generates a unique email address for your agent (like `samuraize-4elX2z@mail.appypeople.ai`). You can share this with clients or use it in automated workflows.
+**SaaS company** — Webhook (triggered from support system when tickets are created) + On Demand (for manual follow-ups)
 
-**Use Case Example**: A content summarization agent that automatically processes and responds to articles or documents sent via email.
+The best setup depends on how you work and when your agent needs to jump in.
 
-## Combining Triggers
+## Configuring triggers
 
-You can enable multiple triggers for the same agent. For example, a reporting agent might run automatically every week but also allow users to manually request reports when needed.
+You can configure triggers through the web platform's agent settings:
 
-## Configure with Violet (Chat)
+1. Navigate to your agent's settings
+2. Click **Triggers** in the left navigation
+3. Toggle each trigger type on or off
+4. For recurring schedules, set the date, time, and frequency
+5. For webhooks, save to generate your unique URL
+6. Click **Save** to apply your changes
 
-<img
-  src="/images/Screenshot2025-12-10at10.35.58AM.png"
-  alt="Screenshot 2025-12-10 at 10.35.58 AM.png"
-  style={{ width:"83%" }}
-/>
+<Info>
+After enabling the webhook trigger and saving, use the Test Trigger button to send a test request and verify everything is working correctly.
+</Info>
 
-Ask Violet to set up your triggers in natural conversation:
+## Getting started
 
-- "I want my agent to send a daily report every morning at 8am"
-- "Enable user chat and also run a weekly summary on Mondays"
-- "Change my daily schedule to 6am instead of 8am"
+Here's how to set up triggers for your agent:
 
-Violet handles the configuration automatically and confirms changes with you.
+1. **Start with On Demand** — Most agents need this for basic user interaction
+2. **Add Recurring Schedule if needed** — Enable this for routine tasks that should happen automatically
+3. **Enable Webhook for integrations** — Turn this on if you want external systems to trigger your agent
+4. **Test your setup** — Use the preview or test trigger button to make sure everything works as expected
 
-## Configure Manually
-
-<img
-  src="/images/Screenshot2025-12-10at10.40.01AM.png"
-  alt="Screenshot 2025-12-10 at 10.40.01 AM.png"
-  style={{ width:"83%" }}
-/>
-
-Access trigger settings directly through **Triggers**:
-
-1. Toggle desired trigger types on/off
-2. For recurring schedules, set date, time, and frequency
-3. Copy email addresses for email triggers (when available)
-4. Save your changes
-
-<iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/mGhXlt7mftM?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-
-## Getting Started
-
-1. **Most agents start with User Initiated** for basic chat functionality
-2. **Add Recurring Schedule** for routine tasks that need to happen regularly
-3. **Test with Preview** to verify trigger behavior works as expected
-
-Choose the triggers that match how your customers want to interact with your expertise!
+Choose the triggers that match how your users want to interact with your agent and how you want work to flow.
