@@ -1,0 +1,119 @@
+---
+title: Triggers
+description: Control how and when your agents start working.
+hidden: true
+---
+
+Triggers determine how and when your agents activate to do work.
+
+They're the entry points that tell an agent "it's time to start a task."
+
+## How triggers work
+
+Every agent needs at least one way to get started. That's what triggers do.
+
+You can set up multiple triggers for a single agent, giving you different ways to activate it depending on the situation.
+
+Mix and match triggers to fit how you actually work.
+
+## Types of triggers
+
+### On demand
+
+This is the simplest trigger. You message your agent in Slack whenever you want it to do something.
+
+Just send a message describing what you need, and your agent gets to work.
+
+Perfect for tasks that happen irregularly or when you need something right now.
+
+### Recurring schedule
+
+Set your agent to automatically start tasks on a repeating schedule.
+
+Daily, weekly, monthly—whatever rhythm makes sense for the work.
+
+Great for routine tasks like weekly reports, daily check-ins, monthly summaries, or any work that happens on a predictable schedule.
+
+### HTTP/Webhook
+
+Let external systems trigger your agent by sending an HTTP POST request.
+
+This is how you connect your agent to other tools like Zapier, Make, your CRM, or custom applications.
+
+When something happens in another system, it can automatically kick off work for your agent.
+
+## Real-world examples
+
+**Marketing agency**
+
+- On demand: Client requests ad copy or social posts
+- Recurring: Weekly performance reports every Monday morning
+- Webhook: New lead from website form triggers outreach sequence
+
+**Business coach**
+
+- On demand: Client asks for advice or feedback
+- Recurring: Daily motivational message to all clients
+- Webhook: Client completes intake form, triggers welcome sequence
+
+**SaaS company**
+
+- On demand: Team member requests customer analysis
+- Recurring: Monthly churn report on the 1st of each month
+- Webhook: New trial signup triggers onboarding email series
+
+## Configuring triggers
+
+You manage triggers in the web platform under your agent's settings.
+
+**Toggle triggers on or off**
+
+Enable or disable any trigger type without deleting the configuration.
+
+**Schedule settings**
+
+For recurring triggers, set the frequency, time, and what task the agent should complete.
+
+**Webhook URL**
+
+For HTTP triggers, the platform generates a unique URL for your agent. Copy this URL and use it in your external tools.
+
+## Webhook details
+
+When you enable the HTTP trigger, you get a unique URL that looks like this:
+
+```
+POST https://builder.appy.ai/api/trigger/http/{unique-id}
+```
+
+Send a POST request to this URL with a JSON body containing the task:
+
+```json
+{
+  "task": "Send welcome email to new customer"
+}
+```
+
+The `task` field tells your agent what to do. You can include any details the agent needs to complete the work.
+
+**Default task**
+
+You can set a default task in the trigger settings. If the webhook receives a request without a task field, your agent will use the default instead.
+
+This is useful when the external system can't customize the payload.
+
+## Getting started with triggers
+
+Here's how to set up your first triggers:
+
+1. **Enable on demand.** This should almost always be on. It lets you message your agent anytime.
+
+2. **Identify routine tasks.** What work happens on a schedule? Set up recurring triggers for those.
+
+3. **Connect external tools.** If you use Zapier, Make, or other automation tools, set up the HTTP trigger and connect them.
+
+4. **Test each trigger.** Make sure each trigger works the way you expect before relying on it.
+
+<Info>
+Use the "Test Trigger" button in the web platform to see exactly what your agent will do when a trigger fires. This is especially helpful for recurring and webhook triggers.
+</Info>
