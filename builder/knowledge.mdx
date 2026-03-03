@@ -1,123 +1,136 @@
 ---
 title: "Knowledge"
 description: "Knowledge is what makes your agent truly yours. It's the difference between an agent that gives generic answers and one that speaks with your unique perspective, and follows your specified methods. Think of it as giving your agent the same expertise you'd share with a trusted team member — your frameworks, your policies, your way of doing things."
-hidden: true
 ---
 
-Knowledge is the reference material your agents draw on — your processes, your documentation, your way of doing things. It's what makes your agent sound like you and follow your methods instead of giving generic answers.
+![knowledgecomplete](/images/knowledgecomplete.png)
 
-## How knowledge works
+## How Knowledge Works
 
-When you upload knowledge files, your agents automatically use them when relevant. There's no extra configuration needed — your agent knows to search its knowledge when answering questions or completing tasks.
+When you add knowledge, your agent absorbs your expertise and draws on it naturally when responding to subscribers. It automatically finds the right information at the right time — no extra setup required.
 
-This means your agent doesn't just follow instructions. It has depth. It can reference your actual methodologies, follow your real procedures, and provide the kind of specific, informed answers that only someone with your background could give.
+This means your agent doesn't just follow instructions — it has depth. It can reference your actual methodologies, follow your real procedures, and provide the kind of specific, informed answers that only someone with your background could give.
 
-## Real-world examples
+## Real-World Examples
 
-Here's how different businesses use knowledge:
+A **life coach** might upload:
 
-**A coach** might upload:
-- Their proprietary coaching framework
-- A library of exercises and reflection prompts
+- Their proprietary coaching framework document
+- A workbook of exercises and reflection prompts
 - An FAQ covering common client questions
 
-**A consulting firm** might upload:
+A **consulting firm** might upload:
+
 - Service descriptions and pricing guides
 - Process documentation and delivery templates
 - Case study summaries for reference
 
-**A business** might upload:
+A **business** might upload:
+
 - Company policies and employee handbooks
 - Standard operating procedures (SOPs)
 - Product specifications or technical documentation
 
-The key is uploading the materials that capture how you work and what makes your approach unique.
+## Subscriber Experience
 
-## Types of knowledge files
+Subscribers won't see your knowledge files directly — they'll just notice that your agent gives better, more specific answers. When a subscriber asks a question that relates to something in your knowledge, the agent pulls from those files behind the scenes and responds with accurate, detailed information.
 
-**Documents** — Written content your agent can read and reference. This includes methodology guides, policies, how-to instructions, FAQs, research summaries, or any text-based material.
+For example, if you uploaded your return policy and a subscriber asks "how do I return an item?", your agent will reference the actual policy document and walk them through the correct steps — instead of giving a generic answer.
 
-Supported formats: Markdown (.md), Text (.txt), PDF (.pdf)
+## Types of Knowledge Files
 
-**Images** — Visual references your agent can interpret. This includes diagrams, charts, infographics, screenshots, or photos that help your agent understand and describe visual concepts.
+### Documents
 
-Supported formats: PNG, JPG, GIF
+Written content your agent can read and reference — methodology guides, policies, how-to instructions, FAQs, research summaries, or any text-based material.
 
-## Adding knowledge
+**Supported formats:** Markdown (.md), Text (.txt), PDF (.pdf)
 
-You have two ways to add knowledge to your agents.
+### Images
 
-### Through conversation
+Visual references your agent can interpret — diagrams, charts, infographics, screenshots, or photos that help your agent understand and describe visual concepts.
 
-The fastest way is through your conversation with Appy.AI in Slack. Simply attach a file and tell Appy.AI what it is.
+**Supported formats:** PNG, JPG, GIF
 
-Try saying:
-- "Here's our coaching methodology guide. Add this to my agent's knowledge."
-- "I'm attaching our company's return policy. My agent should use this when answering questions about returns."
-- "Add this product catalog image to my agent's knowledge so it can reference our current lineup."
+## Configure with Violet (Chat)
 
-Appy.AI will upload the file and confirm it's been added. You can keep building without switching tools.
+The fastest way to add knowledge is through your conversation with Violet. Simply attach a file and tell Violet what it is.
 
-### Through the web platform
+> "Here's our coaching methodology guide. Add this to my agent's knowledge."
 
-You can also manage knowledge directly through the web platform:
+> "I'm attaching our company's return policy. My agent should use this when answering questions about returns."
 
-1. Navigate to your agent's settings
-2. Click **Knowledge** in the left navigation
-3. Click the **Add knowledge** button
-4. Select files from your computer to upload
-5. Your files will appear in the knowledge list immediately
+> "Add this product catalog image to my agent's knowledge so it can reference our current lineup."
 
-To remove knowledge:
+Violet will upload the file and confirm it's been added. You can keep building without leaving the conversation.
+
+<Info>
+  Violet has file size limits for uploads. If you have a larger file, use the manual upload option in the Knowledge panel instead.
+</Info>
+
+## Configure Manually
+
+You can also manage your agent's knowledge directly through the project settings.
+
+<Frame>
+  ![addKnowledge](/images/addKnowledge.png)
+</Frame>
+
+**To add knowledge:**
+
+1. Select the **project settings** icon to switch from your agent preview
+1. Click **Knowledge** in the left navigation under Build
+2. Click the **Add knowledge** button
+3. Select files from your computer to upload
+4. Your files will appear in the knowledge list immediately
+
+{/* Screenshot: Populated knowledge panel */}
+
+**To remove knowledge:**
+
 1. Find the file in your knowledge list
 2. Click the **three-dot menu** next to the file
 3. Select **Delete**
 
 Your knowledge list shows each file's name, type, size, and upload date so you can easily manage what your agent has access to.
 
-## Knowledge options
+## Knowledge Options
 
-When you view your knowledge list, you'll see these details for each file:
+**Content** — The file name
 
-**Content** — The file name and icon representing its type
+**Type** — The format of the file
 
-**Type** — The format of the file (PDF, Markdown, Image, etc.)
+**Size** — The file size.
 
-**Size** — The file size. Smaller files work better — consider breaking large documents into focused, single-topic files.
-
-**Uploaded** — The date the file was added to your agent's knowledge
+**Uploaded** — The date the file was added to your agent's knowledge.
 
 <Info>
-Break large documents into smaller, focused files for better results. For example, separate files for each policy or each chapter work better than one massive document.
+  The maximum effective file size depends on the AI model powering your agent. For the best results, consider breaking large documents into smaller, focused files — for example, separate files for each policy or each chapter rather than one massive document.
 </Info>
 
-## Smart references
+## Instructing the Agent
 
-Your agent automatically searches its knowledge when responding, so in most cases you don't need to do anything extra. Just upload your files and your agent will use them.
+Your agent automatically searches its knowledge when responding to subscribers, so in many cases you don't need to do anything extra. Just upload your files and your agent will use them.
 
-For more control, you can add smart references in your agent's behavior instructions using the `@[fileName]` format. This tells your agent to prioritize specific knowledge files for certain topics.
+For more control, you can add **smart references** in your agent's behavior instructions or skills to point the agent toward specific knowledge files using the `@[fileName]` format and selecting from the list.
 
-Here are some examples:
-- "When answering questions about returns, always consult @ReturnPolicy for the current policy."
-- "Use @CoachingFramework as the foundation for all coaching recommendations."
-- "Reference @PricingGuide when users ask about service tiers or costs."
+Here are some examples of how you might use smart references in your behavior instructions:
 
-Smart references are helpful when you want your agent to consistently prioritize a particular document for certain topics. They're optional — your agent will find and use knowledge automatically without them.
+> "When answering questions about returns, always consult @ReturnPolicy for the current policy."
 
-## Getting started
+> "Use @CoachingFramework as the foundation for all coaching recommendations."
 
-Here's how to start building your agent's knowledge:
+> "Reference @PricingGuide when subscribers ask about service tiers or costs."
 
-1. **Think about what makes you the expert** — What documents, guides, or materials capture your unique approach?
-
-2. **Keep files focused** — Smaller, single-topic files work better than one large document covering everything.
-
-3. **Upload through Slack or the web platform** — Use whichever method is easier in the moment.
-
-4. **Test your agent** — Ask questions that should draw on your expertise to make sure it responds the way you would.
-
-5. **Add smart references if needed** — If you want your agent to prioritize specific files for certain topics, add `@[fileName]` references in your behavior instructions.
+Smart references are helpful when you want your agent to consistently prioritize a particular document for certain topics. They're also useful in **skills** — if you have a skill that handles a specific type of request, you can point it to the exact knowledge file it needs.
 
 <Info>
-Start with your most important documents first. You can always add more knowledge over time as you see what your agent needs.
+  You don't need to use smart references for your agent to access knowledge. They're an optional way to give your agent more precise guidance about which files to use and when.
 </Info>
+
+## Getting Started
+
+1. Think about what makes you the expert — what documents, guides, or materials capture your unique approach?
+2. Keep files focused — smaller, single-topic files work better than one large document covering everything
+3. Upload through Violet or the Knowledge panel in the left navigation
+4. Preview your agent and ask questions that should draw on your expertise to make sure it responds the way you would
+5. Add smart references in your behavior instructions if you want your agent to prioritize specific files for certain topics
