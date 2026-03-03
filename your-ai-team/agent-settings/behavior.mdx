@@ -4,6 +4,48 @@ description: "Define how an agent communicates and approaches tasks."
 hidden: true
 ---
 
-# Behavior
+Behavior settings control how an individual agent responds — its tone, approach, and the instructions it follows.
 
-Behavior settings control how an individual agent responds — its tone, approach, and the instructions it follows. This article covers configuring agent behavior through the web interface.
+## How Behavior Works
+
+Behavior is a set of instructions telling the agent how to communicate and approach tasks. Think of it as the agent's personality and playbook.
+
+When you configure behavior, you're giving the agent guidelines for how to handle conversations and complete work. These instructions shape everything from word choice to decision-making.
+
+## What You Can Configure
+
+You can customize several aspects of how your agent operates:
+
+**Tone and voice** — Set whether the agent is casual or formal, concise or detailed. You might want a customer-facing agent to be warm and friendly, while an internal reporting agent stays professional and brief.
+
+**Task approach** — Define whether the agent works step-by-step or focuses on the big picture. Some tasks need methodical execution, others need strategic thinking.
+
+**Specific rules** — Add guardrails like "always include a CTA" or "never use jargon." These rules ensure consistency across every interaction.
+
+**Domain-specific instructions** — Give the agent expertise in your business area. For example, a real estate agent might need instructions about property types, pricing strategies, and local market knowledge.
+
+## Configuring Behavior
+
+You have two ways to set up agent behavior:
+
+**Through conversation with Appy.AI in Slack** — This is the easiest method. Just tell Appy.AI how you want an agent to behave, and it will update the settings for you. Say something like "Make the sales agent more casual and always end with next steps."
+
+**Through the web platform's agent settings** — For direct control, go to the agent settings page and edit the behavior instructions yourself. This gives you precise control over every detail.
+
+## Smart References in Behavior
+
+You can reference knowledge files using `@[fileName]` in behavior instructions. This lets agents pull specific information into their behavior guidelines.
+
+For example: "When handling returns, follow the process in @ReturnPolicy.md" or "Use the tone and examples from @BrandVoice.md in all customer communications."
+
+This keeps your behavior instructions clean while giving agents access to detailed reference material.
+
+## Tips
+
+Start with the basics and refine over time. You don't need perfect behavior settings on day one — add instructions as you notice patterns or gaps.
+
+Be specific with your instructions. "Respond in 3 paragraphs or less" works better than "be concise." "Always ask for budget before recommending options" is clearer than "be thorough."
+
+<Info>
+Test your behavior settings by asking questions that should trigger specific behaviors. If the agent doesn't respond as expected, refine your instructions and try again.
+</Info>
