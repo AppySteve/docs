@@ -6,4 +6,72 @@ hidden: true
 
 # Knowledge
 
-Knowledge is the reference material your agents draw on — your processes, your documentation, your way of doing things. This article covers adding, managing, and using knowledge files.
+Knowledge is the reference material your agents draw on — your processes, your documentation, your way of doing things. It's what makes your AI team truly yours.
+
+## How Knowledge Works
+
+Upload files and your agents automatically draw on them when relevant. No extra configuration needed — agents find the right information at the right time.
+
+Your agents don't just follow instructions — they have depth from your actual materials. This means they can answer questions, make recommendations, and complete tasks based on your specific expertise and processes.
+
+## Real-World Examples
+
+A coach might upload: proprietary coaching framework, workbook exercises, FAQ for common questions.
+
+A consulting firm might upload: service descriptions, process documentation, case studies.
+
+A business might upload: company policies, SOPs, product specs.
+
+## Types of Knowledge Files
+
+**Documents:** Markdown (.md), Text (.txt), PDF (.pdf)
+
+**Images:** PNG, JPG, GIF — visual references your agents can interpret
+
+## Adding Knowledge
+
+### Through Conversation
+
+Attach a file in Slack and tell Appy.AI what it is. Appy.AI uploads it and confirms.
+
+Example messages:
+- "Here's our coaching methodology guide. Add this to my agent's knowledge."
+- "I'm attaching our return policy. Use this when answering questions about returns."
+
+### Through the Web Platform
+
+Navigate to Knowledge in the agent settings and click "Add knowledge" button. Upload files from your computer.
+
+Files appear in the knowledge list immediately. Delete via the three-dot menu.
+
+## Knowledge Options
+
+**Content** — file name with type icon
+
+**Type** — format (Markdown, Text, PDF, Image)
+
+**Size** — file size (smaller focused files work better)
+
+**Uploaded** — date added
+
+## Smart References
+
+Optional: add `@[fileName]` in agent behavior instructions to point an agent at specific files.
+
+Examples:
+- "When answering questions about returns, always consult @ReturnPolicy.md"
+- "Use @CoachingFramework.md as the foundation for all coaching recommendations."
+
+Smart references are helpful for prioritizing specific docs for certain topics. They're not required — agents access knowledge automatically without them.
+
+<Info>
+For best results, break large documents into smaller, focused files. Separate files for each policy or process work better than one massive document.
+</Info>
+
+## Getting Started
+
+1. **Think about your expertise** — what documents contain your unique processes and knowledge?
+2. **Keep files focused** — one topic per file works better than comprehensive mega-documents
+3. **Upload via conversation or web** — whichever is more convenient for you
+4. **Test by asking questions** — see how your agents use the knowledge in real conversations
+5. **Add smart references if needed** — point agents to specific files for specific topics
