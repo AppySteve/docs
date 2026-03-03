@@ -1,117 +1,65 @@
 ---
 title: "Behavior"
 description: "Your agent's behavior is defined in plain english - no code, just instructions on what it is supposed to do and how. Additional tools help it complete its job successfully."
+hidden: true
 ---
 
-## Your Agent's Instructions
+Behavior settings control how an individual agent responds — its tone, approach, and the instructions it follows. This is where you shape your agent's personality and give it the guidelines it needs to handle conversations and work the way you want.
 
-Through your initial chat conversation, Violet provided your agent a set of instructions:
+## How behavior works
 
-- **What your agent does**: The main purpose and goals
-- **How it should behave**: The tone, personality, and approach
-- **Step-by-step processes**: Your methodology or workflow
-- **Important context**: Key information your agent needs to know
-- **Smart references**: Connection to fields in your databases and your preferences to support structured use of data
+Think of behavior as your agent's personality and playbook. It's the combination of guidelines that determine how your agent handles conversations and completes work.
 
-<img
-  src="/images/Screenshot2025-07-23at12.19.32PM.png"
-  alt="Screenshot 2025-07-23 at 12.19.32 PM"
-  title="Screenshot 2025-07-23 at 12.19.32 PM"
-  style={{ width:"80%" }}
-/>
+When someone interacts with your agent, it draws on these behavior settings to decide how to respond, what tone to use, and what approach to take. You're not programming logic — you're giving your agent a clear sense of how you want it to show up.
 
-### Smart References
+## What you can configure
 
-Within your instructions, we @mention [preferences](/builder/preferences) or [databases](/builder/databases) you have created, as well as system variables like your customer's name or email address. Adding these to your instructionshelps your agent know precisely how to utilize these variables.
+You have full control over how your agent behaves. Here's what you can adjust:
 
-<img
-  src="/images/Screenshot2025-09-29at9.36.42AM.png"
-  alt="Screenshot 2025-09-29 at 9.36.42 AM.png"
-  title="Screenshot 2025-09-29 at 9.36.42 AM.png"
-  style={{ width:"48%" }}
-/>
+**Tone and voice** — Set whether your agent is casual and friendly or formal and professional. You can make it warm and conversational for customer support, or direct and data-focused for analytics work.
 
-## Tools and Skills
+**Task approach** — Guide how your agent tackles work. Some agents work best with step-by-step instructions, while others need to see the big picture first and figure out the details.
 
-In addition to its broad instructions, your agent has Skill and Tools - these give your agent the ability to do things beyond just chatting.
+**Specific rules** — Add guidelines like "always include a call-to-action at the end" or "never make assumptions about pricing — always ask first." These rules help your agent stay consistent.
 
-<img
-  src="/images/Screenshot2025-07-23at12.18.26PM.png"
-  alt="Screenshot 2025-07-23 at 12.18.26 PM"
-  title="Screenshot 2025-07-23 at 12.18.26 PM"
-  style={{ width:"50%" }}
-/>
+**Domain-specific instructions** — If your agent handles specialized work, you can include industry terminology, preferred formats, or specific processes it should follow.
 
-### Tools: Built-in Superpowers
+## Configuring behavior
 
-Tools are ready-made capabilities we've built for you, like:
+You have two ways to configure your agent's behavior, and you can use both depending on what's easier in the moment.
 
-<ToolSnippet />
+**Through conversation with Appy.AI in Slack** — This is the easiest way. Just tell Appy.AI what you want changed, and it updates your agent's behavior for you.
 
-We provide some default tools to begin with, like 'userChat', 'fileSystem,' 'googleSearch', and 'websiteScraper'. Simply click to add or remove tools so your agent has what it needs to accomplish its goals.
+Try saying things like:
+- "Make my support agent more friendly and casual"
+- "My agent should always respond in 3 paragraphs or less"
+- "Add a rule that the agent should never discuss pricing without checking with me first"
 
-<Tip>
-  Click on the name of a tool within [builder.appy.ai](http://builder.appy.ai) to learn that tool's purpose
-</Tip>
+**Through the web platform's agent settings** — If you prefer direct control, you can edit your agent's behavior instructions manually through the web interface. Navigate to your agent's settings, find the Behavior section, and write or adjust the instructions yourself.
 
-### Skills: Your Custom Capabilities
+<Info>
+Both methods work equally well — use whichever feels more natural for the change you're making.
+</Info>
 
-Skills are custom capabilities created when you need your agent to do something specific that requires detailed instructions. Create a new skill when:
+## Smart references in behavior
 
-- You have a complex sub-process that needs lots of detailed guidance
-- You want to isolate a specific, repeatable task
-- The main instructions are getting too long and complex
+You can reference knowledge files directly in your behavior instructions using the `@[fileName]` format. This tells your agent to prioritize specific files when handling certain topics.
 
-Think of skills as specialized tasks your agent can do - like "analyze a business proposal" or "create a workout plan."
+For example:
+- "When handling returns, follow @ReturnPolicy.md"
+- "Use @CoachingFramework.pdf as the foundation for all coaching advice"
+- "Reference @PricingGuide.txt when discussing service tiers"
 
-<iframe className="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/Zk8ljXHhonE?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+Smart references are optional — your agent will automatically search its knowledge when needed. But if you want to make sure it always uses a specific file for certain situations, smart references give you that control.
 
-<Tip>
-  For many agents, custom skills are unnecessary - all instructions can remain under behavior
-</Tip>
+## Tips for better behavior
 
-## How It All Works Together
+**Start basic, refine over time** — Don't try to write the perfect behavior instructions on day one. Start with the essentials and adjust as you see how your agent performs.
 
-Your agent reads its instructions, then automatically decides which skills and tools to use based on what the user needs. You don't have to manage when or how - just give good instructions and select the right capabilities.
+**Be specific** — Instead of "be concise," say "respond in 3 paragraphs or less." Instead of "be helpful," say "always offer two options when someone asks for recommendations."
 
-## Configure with Violet (Chat)
+**Test by asking questions** — After updating behavior, test it by asking your agent questions or giving it tasks. See if it responds the way you expect. If not, adjust and test again.
 
-Ask Violet to refine your agent's behavior:
-
-- "My agent should help users analyze financial reports. It needs to be professional and data-focused."
-- "I don't like how it starts a conversation. Can you have it always give a warm greeting that reminds users of its purpose."
-- "Create a skill for summarizing research papers"
-- "Make my agent more conversational and friendly in tone"
-- "Reference the user's preferred industry from their preferences in every interaction"
-
-Violet updates your instructions, adds tools and skills, and helps you refine the behavior through conversation.
-
-## Configure Manually
-
-![Screenshot 2025-12-11 at 9.29.33 AM.png](/images/Screenshot2025-12-11at9.29.33AM.png)
-
-Access instructions, skills, and tools directly through **Behavior**:
-
-1. Write or edit your agent's **Instructions** in plain English
-2. Use **@mentions** to reference preferences, databases, or system variables
-3. Click **Add Tool** to select from available built-in tools
-4. Click **Create Skill** to add custom capabilities with detailed instructions
-5. Click the chevron <Icon icon="square-chevron-left" /> below Publish for [advanced configuration options](/builder/configuration) like selecting your LLM model
-6. Use **Preview** to test your agent's behavior
-
-## Testing Agent Behavior
-
-![Screenshot 2025-12-11 at 9.34.34 AM.png](/images/Screenshot2025-12-11at9.34.34AM.png)
-
-Testing your agent is always one click away. Select a menu item or start chatting to begin using your agent. You can make real time adjustments to behavior, skills, and tools and see how it impacts the preview.
-
-## Getting Started
-
-1. **Start with clear instructions** about your agent's main purpose
-2. **Add essential tools** like userChat and googleSearch
-3. **Test your agent** to see how it performs
-4. **Refine and add skills** as needed for complex tasks
-
-<Tip>
-  Start simple and adjust based on testing! It's easier to start with basic instructions and refine based on observation than to over-instruct to begin with.
-</Tip>
+<Info>
+The best way to dial in your agent's behavior is to use it yourself first. Spend time interacting with it, note what feels off, and make small adjustments until it feels right.
+</Info>
