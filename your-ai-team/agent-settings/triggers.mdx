@@ -6,4 +6,75 @@ hidden: true
 
 # Triggers
 
-Triggers determine how agents are activated — on demand, on a schedule, or from external tools. This article covers configuring triggers through the web interface.
+Triggers control how and when your agents start working — on demand, on a schedule, or from external tools.
+
+## How Triggers Work
+
+Each trigger type is a different way to start an agent execution. You can enable the ones you need and configure their settings.
+
+Mix and match — an agent could accept direct messages, run weekly, AND accept webhooks all at the same time.
+
+## Types of Triggers
+
+### On Demand
+
+The default: message Appy.AI in Slack or the web platform whenever you want.
+
+This is the most common trigger — just start a conversation with your agent when you need something.
+
+### Recurring Schedule
+
+Run agents automatically on a repeating schedule.
+
+This is useful for routine tasks like weekly reports, daily briefings, or regular check-ins. Configure the frequency and timing, and your agent executes on its own.
+
+### HTTP / Webhook
+
+External systems trigger agents via HTTP POST request.
+
+Connect to your workflow: Zapier, Make, CRMs, or internal scripts. Each trigger gets a unique webhook URL that other systems can call.
+
+## Real-World Examples
+
+Here's how different businesses use triggers:
+
+**Marketing agency:** On Demand for questions + Webhook from CRM when new leads come in
+
+**Business coach:** On Demand for conversations + Recurring Schedule for weekly accountability check-ins
+
+**SaaS company:** Webhook from support system for new tickets + On Demand for direct interaction
+
+## Configuring Triggers
+
+Access triggers through the agent settings on the web platform.
+
+Toggle triggers on or off based on what you need. For Recurring Schedule, set the frequency and timing. For HTTP/Webhook, save to generate your webhook URL, then use Test Trigger to verify it works.
+
+<Info>
+You can enable multiple triggers for the same agent. They work independently — each one is just another way to start your agent.
+</Info>
+
+## Webhook Details
+
+Send an HTTP POST with a JSON body to your webhook URL. The `task` field tells the agent what to do.
+
+You can also set a Default Task for when no task is specified in the request.
+
+**Format:**
+```
+POST https://builder.appy.ai/api/trigger/http/{unique-id}
+Body: {"task": "Your task here"}
+```
+
+<Info>
+Use the Test Trigger button in the web platform to verify your webhook is working correctly before connecting external systems.
+</Info>
+
+## Getting Started
+
+1. Think about how your agents should be triggered
+2. Enable triggers in agent settings
+3. If using webhooks, save and test with the Test Trigger button
+4. Preview to make sure interactions start correctly
+
+Your agents are now ready to work when and how you need them.
