@@ -21,14 +21,6 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
-            "pages": [
-              "index",
-              "quickstart",
-              "pricing"
-            ]
-          },
-          {
             "group": "Your AI Team",
             "pages": [
               "your-ai-team/overview",
@@ -49,18 +41,6 @@
                   "your-ai-team/agent-settings/organization-settings"
                 ]
               }
-            ]
-          },
-          {
-            "group": "Subscriber Experience",
-            "pages": [
-              "subscriber/overview",              
-              "subscriber/onboarding",          
-              "subscriber/preferences",
-              "subscriber/support",              
-              "subscriber/billing",
-              "subscriber/account",
-              "subscriber/organizations"
             ]
           }
         ]
