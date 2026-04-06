@@ -29,34 +29,26 @@
             ]
           },
           {
-            "group": "Builder Experience",
+            "group": "Your AI Team",
             "pages": [
-              "builder/overview",              
+              "your-ai-team/overview",
+              "your-ai-team/installation",
+              "your-ai-team/customizing-your-team",
+              "your-ai-team/working-with-your-team",
+              "your-ai-team/agent-capabilities",
               {
-                "group": "Build",
+                "group": "Agent Settings",
                 "pages": [
-                  "builder/behavior",
-                  "builder/integrations",
-                  "builder/publish",
-                  "builder/preferences",
-                  "builder/knowledge",
-                  "builder/triggers",
-                  "builder/theme",
-                  "builder/databases",
-                  "builder/settings",
-                  "builder/configuration",
-                  "builder/your_organization"
+                  "your-ai-team/agent-settings/agent-settings",
+                  "your-ai-team/agent-settings/behavior",
+                  "your-ai-team/agent-settings/configuration",
+                  "your-ai-team/agent-settings/knowledge",
+                  "your-ai-team/agent-settings/integrations",
+                  "your-ai-team/agent-settings/triggers",
+                  "your-ai-team/agent-settings/databases",
+                  "your-ai-team/agent-settings/organization-settings"
                 ]
-              },
-              {
-                "group": "Monetize",
-                "pages": [
-                  "builder/monetize",
-                  "builder/international"
-                ]
-              },
-              "builder/promote",
-              "builder/engage"
+              }
             ]
           },
           {
