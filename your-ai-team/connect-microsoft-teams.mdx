@@ -1,0 +1,93 @@
+---
+title: "Connect Microsoft Teams"
+description: "Install and connect the Appy.AI app in your Microsoft Teams workspace."
+---
+
+Connect Appy.AI to Microsoft Teams to start working with your agents directly in your Teams workspace.
+
+## Prerequisites
+
+Before you begin, make sure you have:
+
+- Microsoft Teams admin access to upload custom apps
+- Global admin permissions to grant app consent
+- An active Appy.AI organization
+
+## Step 1: Enable custom app uploads
+
+In the Teams admin center, enable custom app uploads for your organization:
+
+1. Go to **Teams admin center** > **Teams apps** > **Setup policies**
+2. Select your policy (or create a new one)
+3. Turn **Upload custom apps** to **On**
+4. Save your changes
+
+## Step 2: Start connection flow in Appy.AI
+
+From your Appy.AI web platform:
+
+1. Go to **Settings** > **Integrations**
+2. Find the Microsoft Teams card
+3. Click **Connect Teams**
+4. Click **Download App** to download the app zip file
+
+Keep this wizard open — you'll need it in the next steps.
+
+## Step 3: Upload app in Teams admin center
+
+Upload the Appy.AI app to your Teams workspace:
+
+1. Go to **Teams admin center** > **Teams apps** > **Manage apps**
+2. Click **Actions** > **Upload new app**
+3. Select the zip file you downloaded
+4. Wait for the upload to complete
+
+## Step 4: Grant admin permissions
+
+Grant the necessary permissions for Appy.AI to work in your workspace:
+
+1. In the Appy.AI connection wizard, click the consent screen link
+2. Review the requested permissions
+3. Click **Accept** to grant consent
+
+You must be a global admin to complete this step.
+
+## Step 5: Open app in Teams
+
+Open the Appy.AI app in your Teams workspace:
+
+1. In Microsoft Teams, go to **Apps**
+2. Select **Built for your org**
+3. Find and click **Appy.AI**
+4. Click **Open** to launch the app
+
+## Step 6: Connect your organization
+
+Complete the connection by linking your Appy.AI organization:
+
+1. Copy the full `/connect` command from the connection wizard
+2. Open a direct message with the Appy.AI bot in Teams
+3. Paste the command and send it
+4. Verify the connection is successful
+
+You're now ready to start working with your AI team in Microsoft Teams.
+
+## Tips
+
+- **Use direct messages**: DM the Appy.AI bot for the best experience. Direct messages support file uploads, while channels may have limitations.
+- **One-time setup**: Only one person needs to run the `/connect` command to link your organization.
+- **File delivery**: Files from Appy.AI are delivered as download links in Teams.
+
+## Troubleshooting
+
+**App not showing up after upload**
+
+Sign out of Teams and sign back in. The app should appear in your **Built for your org** section.
+
+**Connection command not working**
+
+Make sure you copied the full `/connect` command from the wizard, including the workspace token. The command should look like `/connect <your-token>`.
+
+**Permission consent failing**
+
+The admin granting consent must have global admin permissions in your Microsoft 365 organization. If you don't have these permissions, contact your IT administrator.
