@@ -21,46 +21,13 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
-            "pages": [
-              "index",
-              "quickstart",
-              "pricing"
-            ]
-          },
-          {
             "group": "Your AI Team",
             "pages": [
               "your-ai-team/overview",
               "your-ai-team/installation",
               "your-ai-team/customizing-your-team",
               "your-ai-team/working-with-your-team",
-              "your-ai-team/agent-capabilities",
-              {
-                "group": "Agent Settings",
-                "pages": [
-                  "your-ai-team/agent-settings/agent-settings",
-                  "your-ai-team/agent-settings/behavior",
-                  "your-ai-team/agent-settings/configuration",
-                  "your-ai-team/agent-settings/knowledge",
-                  "your-ai-team/agent-settings/integrations",
-                  "your-ai-team/agent-settings/triggers",
-                  "your-ai-team/agent-settings/databases",
-                  "your-ai-team/agent-settings/organization-settings"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Subscriber Experience",
-            "pages": [
-              "subscriber/overview",              
-              "subscriber/onboarding",          
-              "subscriber/preferences",
-              "subscriber/support",              
-              "subscriber/billing",
-              "subscriber/account",
-              "subscriber/organizations"
+              "your-ai-team/agent-capabilities"
             ]
           }
         ]
