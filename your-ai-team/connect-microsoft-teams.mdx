@@ -15,13 +15,23 @@ Before you begin, make sure you have:
 - Microsoft Teams administrator access (for the installation steps)
 - Access to the [Microsoft Teams admin center](https://admin.teams.microsoft.com)
 
-## Step 1: Start the connection flow in [Appy.AI](http://Appy.AI)
+## Start the connection flow in [Appy.AI](http://Appy.AI)
 
 1. Log in to your Appy.AI account at [https://builder.appy.ai/connections](https://builder.appy.ai/connections)
 2. Click **Connect** next to Microsoft Teams
 3. You'll see the **Connect Microsoft Teams** wizard, which will guide you through these steps.
+   <Frame>
+     <img
+       src="/images/Screenshot-2026-04-07-at-12.50.28-PM.png"
+       alt="Screenshot 2026 04 07 At 12 50 28 PM"
+       title="Screenshot 2026 04 07 At 12 50 28 PM"
+       style={{ width:"42%" }}
+     />
+   </Frame>
 
-## Step 2: Enable custom app uploads
+# 1. Install Appy through Microsoft Teams Admin
+
+## Enable custom app uploads
 
 A Teams admin needs to ensure that custom app uploads are allowed in your organization. This setting controls whether users can add apps that aren't published in the Microsoft Teams app store.
 
@@ -38,10 +48,10 @@ A Teams admin needs to ensure that custom app uploads are allowed in your organi
    </Frame>
 
 <Info>
-  This setting may already be enabled for your organization. If it's already on, you can skip ahead to Step 2.
+  This setting may already be enabled for your organization. If it's already on, you can skip ahead to Step 3.
 </Info>
 
-## Step 3: Upload the app in Microsoft Teams admin center
+## Upload the app in Microsoft Teams admin center
 
 Now a Teams admin needs to download the [Appy.ai](http://Appy.ai) app package and upload it to teams.
 
@@ -60,7 +70,9 @@ Now a Teams admin needs to download the [Appy.ai](http://Appy.ai) app package an
 7. Wait a moment for the upload to process. You'll see a **New app added** confirmation when it's complete.
 8. Click the link in the confirmation to open the app management page, or search for "Appy" in the Manage apps list to verify the app is there.
 
-## Step 4: Grant admin permissions
+# 2. Grant Admin Consent
+
+## Grant admin permissions
 
 1. Open the [Microsoft permissions consent screen](https://login.microsoftonline.com/common/adminconsent?client_id=79aea06a-b610-4b53-b85e-a541c261cf94).
    <Frame>
@@ -78,7 +90,9 @@ Now a Teams admin needs to download the [Appy.ai](http://Appy.ai) app package an
   This consent must be granted by a Teams administrator. The permissions apply organization-wide — no other users will be prompted to review them separately.
 </Warning>
 
-## Step 5: Open the app in Microsoft Teams
+# 3. Connect your organization in Teams
+
+## Open the app in Microsoft Teams
 
 Now that the app is installed and permissions are granted, any user in your organization can find and open Appy.AI in Teams.
 
@@ -94,7 +108,7 @@ Now that the app is installed and permissions are granted, any user in your orga
   If you don't see Appy.AI in the app list, try signing out of Teams and signing back in. Teams can take a few minutes to refresh its app cache after a new app is installed.
 </Info>
 
-## Step 6: Connect your organization
+## Connect your organization
 
 The final step links your Teams workspace to your Appy.AI organization.
 
