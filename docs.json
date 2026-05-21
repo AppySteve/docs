@@ -32,7 +32,6 @@
                 "group": "Agent Capabilities",
                 "pages": [
                   "your-ai-team/agent-capabilities",
-                  "your-ai-team/agent-capabilities/document-creation",
                   "your-ai-team/agent-capabilities/triggers",
                   "your-ai-team/agent-capabilities/behavior-and-instructions",
                   "your-ai-team/agent-capabilities/knowledge",
