@@ -3,57 +3,48 @@ title: "Triggers"
 description: "Control when your agents start working — on demand, on a schedule, by webhook, or by email."
 ---
 
-Triggers control when your agents start working. By default, agents respond when you message them — but they can also run 24/7 behind the scenes, working autonomously with no maintenance required.
+Triggers control when your agents start working. By default, agents respond when you message them — but set up a trigger and they'll run on their own, 24/7, with no maintenance required.
 
 ## Trigger types
 
-- **On demand** — @mention or direct message Appy.AI in Slack or teams and your agent gets to work immediately. This is how most interactions happen.
-- **Scheduled** — Agents can run on a recurring schedule: daily, weekly, monthly, or even "10 minutes from now." Great for things like morning news digests, weekly competitive reports, or monthly performance summaries.
-- **Integration Triggers** — External tools can trigger your agents automatically. When something happens in another system — like a new lead added to your CRM — your agent can kick off and handle it.
+- **On demand** — @mention or DM Appy.AI in Slack or Teams and your agent gets to work immediately. This is how most interactions happen.
+- **Scheduled** — Agents run on a recurring schedule: daily, weekly, monthly, or at a specific time. Great for morning briefings, weekly competitive reports, or monthly performance summaries.
+- **Integration triggers** — External tools can kick off your agents automatically. When something happens in another system — like a new lead added to your CRM — your agent handles it.
 
-You can combine multiple triggers on the same agent. A reporting agent might run on a weekly schedule but also be available for you to message anytime you want an ad-hoc report.
+You can stack multiple triggers on the same agent. A reporting agent might run on a weekly schedule and also be available to message anytime for ad-hoc requests.
 
 <Tip>
   The easiest way to set up triggers is just to ask: "Send me a competitive update every Monday morning" or "Change my daily report to 6am instead of 8am."
 </Tip>
 
-## Scheduled Triggers
+## Scheduled triggers
 
-Your AI team doesn't only respond when you ask. With **recurring schedules**, any agent on your team can pick up the same job on a cadence you set — every weekday morning, every Friday at close of business, the first of the month — and deliver the result back to you in Slack, Teams, or wherever you work.
+Scheduled triggers turn a one-time request into a standing instruction. Instead of asking your agent every Monday, it already knows it's Monday — and shows up with the answer.
 
-Think of it as the difference between asking a colleague to "remind me about this on Monday" and having a teammate who already knows it's Monday and shows up with the answer.
-
-### What a recurring schedule is
-
-A recurring schedule is a standing instruction you give your AI team. Once it's set up, the agent will:
+Once a schedule is set, the agent will:
 
 - Wake up at the time you specified (in your timezone)
-- Carry out the task the same way it would if you'd asked in chat
-- Deliver the result to the destination you chose (a DM, a channel, or a thread)
+- Carry out the task exactly as it would if you'd asked in chat
+- Deliver the result to your chosen destination (a DM, a channel, or a thread)
 - Repeat on the cadence you set, until you pause or remove it
 
-The schedule runs whether your computer is on or off — Appy handles it in the cloud, so you don't have to keep an app open.
+The schedule runs whether your computer is on or off — Appy handles it in the cloud.
 
-### What scheduled tasks can do
+### Examples
 
 - _"Every weekday at 8 AM, have Sarah send me a briefing of my calendar and any unread emails marked important."_
 - _"Every Monday at 9, have Scout check what our top three competitors shipped last week and post a summary to #competitive-intel."_
 - _"On the first of every month, have Lincoln pull an SEO audit on appy.ai and DM it to me."_
 - _"Every Friday at 4 PM, ask Piper to surface 15 new leads matching our ICP and drop the list in #pipeline."_
 
-You can include the destination ("DM me," "post in #channel-name"), the timezone if it isn't your default, and any task-specific context the agent needs.
+You can include the destination ("DM me," "post in #channel-name"), your timezone if it differs from the default, and any context the agent needs for that specific task.
 
-If you change your mind about when, where, or how the schedule runs, just tell Violet — "stop my Monday competitive check," "move my morning briefing to 7 AM," "have it go to #leadership instead." Violet handles the update for you.
+To change a schedule — time, destination, or cadence — just tell Violet: "stop my Monday competitive check," "move my morning briefing to 7 AM," or "have it go to #leadership instead."
 
-### Where to manage them
+### Managing schedules
 
-Today, **Violet is your control panel** for scheduled work. To pause, change, or remove a schedule, just say so in chat.
+Violet is your control panel for scheduled work. To pause, change, or remove a schedule, tell her in chat.
 
-You can also see what's scheduled at a glance on the web: \
-Visit [https://builder.appy.ai/schedules](https://builder.appy.ai/schedules)
+To see what's currently scheduled, visit [https://builder.appy.ai/schedules](https://builder.appy.ai/schedules).
 
-To make any change to a schedule, head back to chat and ask Violet.
-
-> **Why is everything routed through Violet?** Violet has full context on your team — which agents you have, what they're good at, and how they're connected to your tools. Letting her own the create/edit/delete flow means a schedule can't drift out of sync with the agent that runs it.
-
-### 
+> **Why route everything through Violet?** Violet has full context on your team — which agents you have, what they're good at, and how they connect to your tools. Owning the schedule flow means nothing drifts out of sync with the agent running it.
