@@ -49,38 +49,17 @@
               {
                 "group": "Builder",
                 "pages": [
-                  "builder/overview",
                   "builder/behavior",
-                  "builder/configuration",
-                  "builder/databases",
                   "builder/engage",
-                  "builder/integrations",
-                  "builder/international",
-                  "builder/knowledge",
-                  "builder/monetize",
-                  "builder/preferences",
-                  "builder/promote",
-                  "builder/publish",
                   "builder/settings",
-                  "builder/theme",
-                  "builder/triggers",
-                  "builder/your_organization"
+                  "builder/triggers"
                 ]
               },
               {
                 "group": "Subscriber",
-                "pages": [
-                  "subscriber/overview",
-                  "subscriber/account",
-                  "subscriber/billing",
-                  "subscriber/onboarding",
-                  "subscriber/organizations",
-                  "subscriber/preferences",
-                  "subscriber/support"
-                ]
+                "pages": []
               },
-              "quickstart",
-              "pricing"
+              "quickstart"
             ]
           }
         ]
