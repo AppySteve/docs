@@ -24,10 +24,10 @@
             "group": "Your AI Team",
             "pages": [
               "your-ai-team/overview",
-              "your-ai-team/meet-your-team",
               "your-ai-team/installation",
-              "your-ai-team/customizing-your-team",
+              "your-ai-team/meet-your-team",
               "your-ai-team/working-with-your-team",
+              "your-ai-team/customizing-your-team",
               {
                 "group": "Agent Capabilities",
                 "pages": [
