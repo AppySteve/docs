@@ -42,6 +42,20 @@
             ]
           },
           {
+            "group": "Administration",
+            "pages": [
+              "administration",
+              "administration/dashboard",
+              "administration/agents",
+              "administration/activity",
+              "administration/analytics",
+              "administration/schedules",
+              "administration/integrations",
+              "administration/billing",
+              "administration/profile"
+            ]
+          },
+          {
             "group": "Archive",
             "hidden": true,
             "pages": [
