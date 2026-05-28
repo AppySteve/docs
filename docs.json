@@ -29,6 +29,20 @@
               "your-ai-team/working-with-your-team",
               "your-ai-team/customizing-your-team",
               {
+                "group": "Administration",
+                "pages": [
+                  "administration",
+                  "administration/dashboard",
+                  "administration/agents",
+                  "administration/activity",
+                  "administration/analytics",
+                  "administration/schedules",
+                  "administration/integrations",
+                  "administration/billing",
+                  "administration/profile"
+                ]
+              },
+              {
                 "group": "Agent Capabilities",
                 "pages": [
                   "your-ai-team/agent-capabilities",
@@ -39,20 +53,6 @@
                   "your-ai-team/agent-capabilities/databases"
                 ]
               }
-            ]
-          },
-          {
-            "group": "Administration",
-            "pages": [
-              "administration",
-              "administration/dashboard",
-              "administration/agents",
-              "administration/activity",
-              "administration/analytics",
-              "administration/schedules",
-              "administration/integrations",
-              "administration/billing",
-              "administration/profile"
             ]
           },
           {
