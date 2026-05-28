@@ -1,3 +1,50 @@
 ---
 title: "integrations"
 ---
+
+Integrations are what let your agents do real work inside the tools your business already uses. When an agent is connected to Gmail, it can send emails. Connected to GitHub, it can open pull requests. Connected to Google Sheets, it can read and write data.
+
+The Integrations page shows every tool currently connected to your account — organized by who connected them.
+
+## Communication channels
+
+At the top of the page, the **Communication channels** section shows how your agents reach your team:
+
+- **Slack** — Connect your Slack workspace to message agents in channels and DMs. Shows `Connected` when your workspace is linked.
+- **Teams** — Connect Microsoft Teams to run agents from any chat or channel.
+
+These are your primary interfaces for working with your agents day-to-day. See [Installation](/your-ai-team/installation) for setup instructions.
+
+## Your integrations
+
+The **Your integrations** section lists tools connected under your personal account. These are scoped to you — they're available to agents when you're the one initiating tasks, but aren't shared across the organization.
+
+Each row shows:
+
+- The tool's logo and name
+- **Connection status** — `Connected` (active) or `Pending` (authorization in progress)
+- For connected tools: who connected it and when (e.g., "Connected May 21, 2026 by [brian@appy.ai](mailto:brian@appy.ai)")
+
+## \[Org name\]'s integrations
+
+The **\[Your organization\]'s integrations** section lists tools connected at the organization level. These are shared — every agent can use them on behalf of any team member.
+
+Org-wide integrations are typically set up by an admin and represent tools the whole team uses (e.g., a shared CRM, the company Slack workspace, or a centralized Gmail account).
+
+## Connecting a new integration
+
+New integrations are connected through Violet in chat — there's no direct "add" button on this page. Tell Violet what you want to connect:
+
+- "Connect my Gmail account"
+- "Add our company's HubSpot CRM"
+- "Connect Linear so you can create issues"
+
+Violet will walk you through authorization. Once connected, the integration appears on this page immediately.
+
+## Disconnecting an integration
+
+Click a connected integration and select **Disconnect**. Access is removed immediately — any tasks that depend on it will need to be re-run after reconnecting.
+
+<Tip>
+  Personal integrations you connect are only available for your own tasks. To make an integration available team-wide, ask Violet to connect it as an organization integration.
+</Tip>
