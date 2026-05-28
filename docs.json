@@ -31,15 +31,15 @@
               {
                 "group": "Administration",
                 "pages": [
-                  "administration",
-                  "administration/dashboard",
-                  "administration/agents",
-                  "administration/activity",
-                  "administration/analytics",
-                  "administration/schedules",
-                  "administration/integrations",
-                  "administration/billing",
-                  "administration/profile"
+                  "your-ai-team/administration",
+                  "your-ai-team/administration/dashboard",
+                  "your-ai-team/administration/agents",
+                  "your-ai-team/administration/activity",
+                  "your-ai-team/administration/analytics",
+                  "your-ai-team/administration/schedules",
+                  "your-ai-team/administration/integrations",
+                  "your-ai-team/administration/billing",
+                  "your-ai-team/administration/profile"
                 ]
               },
               {
