@@ -12,14 +12,12 @@ The setup takes about 10 minutes and requires a Microsoft Teams administrator fo
 Before you begin, make sure you have:
 
 - An Appy.AI account with an active organization (visit [https://builder.appy.ai/swarm/signup](https://builder.appy.ai/swarm/signup))
-- Microsoft Teams administrator access (for the installation steps)
-- Access to the [Microsoft Teams admin center](https://admin.teams.microsoft.com)
+- Microsoft Global administrator access (for the installation and consent steps)
 
 ## Start the connection flow in [Appy.AI](http://Appy.AI)
 
-1. Log in to your Appy.AI account at [https://builder.appy.ai/connections](https://builder.appy.ai/connections)
-2. Click **Connect** next to Microsoft Teams
-3. You'll see the **Connect Microsoft Teams** wizard, which will guide you through these steps.
+1. Log in to your Appy.AI account at [https://builder.appy.ai]
+2. You'll see the **Connect Microsoft Teams** wizard, which will guide you through these steps.
    <Frame>
      <img
        src="/images/Screenshot-2026-04-07-at-12.50.28-PM.png"
@@ -48,14 +46,14 @@ A Teams admin needs to ensure that custom app uploads are allowed in your organi
    </Frame>
 
 <Info>
-  This setting may already be enabled for your organization. If it's already on, you can skip ahead to Step 3.
+  This setting may already be enabled for your organization.
 </Info>
 
 ## Upload the app in Microsoft Teams admin center
 
 Now a Teams admin needs to download the [Appy.ai](http://Appy.ai) app package and upload it to teams.
 
-1. Download the[ Appy.AI app package](https://opkyduq0pk8jvf0d.public.blob.vercel-storage.com/appyai-teams-sideload.zip). This will save a small zip file to your computer.
+1. Download the[ Appy.AI app package](https://opkyduq0pk8jvf0d.public.blob.vercel-storage.com/appyai-teams-sideload.zip). This will save a small zip file to your computer. **Do not unzip the file.**
 2. Go to the [Microsoft Teams admin center](https://admin.teams.microsoft.com).
    <Frame>
      ![Screenshot 2026 04 06 At 4 00 29 PM](/images/Screenshot-2026-04-06-at-4.00.29-PM.png)
@@ -68,13 +66,15 @@ Now a Teams admin needs to download the [Appy.ai](http://Appy.ai) app package an
      ![Screenshot 2026 04 06 At 4 06 03 PM](/images/Screenshot-2026-04-06-at-4.06.03-PM.png)
    </Frame>
 7. Wait a moment for the upload to process. You'll see a **New app added** confirmation when it's complete.
-8. Click the link in the confirmation to open the app management page, or search for "Appy" in the Manage apps list to verify the app is there.
+8. Search for "Appy" in the Manage apps list to verify the app is there.
+9. Click **Users and Groups**
+10. Click **Install App**, and select Install for Everyone or specified groups. This ensures your team members will be able to message Appy.
 
 # 2. Grant Admin Consent
 
 ## Grant admin permissions
 
-1. Open the [Microsoft permissions consent screen](https://login.microsoftonline.com/common/adminconsent?client_id=79aea06a-b610-4b53-b85e-a541c261cf94).
+1. Open the [Microsoft permissions consent screen]
    <Frame>
      <img
        src="/images/image-2.png"
@@ -87,34 +87,19 @@ Now a Teams admin needs to download the [Appy.ai](http://Appy.ai) app package an
 3. Click **Accept** to grant the permissions for your organization.
 
 <Warning>
-  This consent must be granted by a Teams administrator. The permissions apply organization-wide — no other users will be prompted to review them separately. Depending on your organization' s policy, you may require a Global Administrator rather than a Teams Administrator.
+  This consent must be granted by a Global administrator. The permissions apply organization-wide — no other users will be prompted to review them separately.
 </Warning>
 
 # 3. Add the app
 
 ## Open the app in Microsoft Teams
 
-Now that the app is installed and permissions are granted, any user in your organization can find and open Appy.AI in Teams.
+Now that the app is installed and permissions are granted, any user in your organization can chat with Appy.AI.
 
-1. Open Microsoft Teams.
-2. Click the **Apps** button in the left sidebar.
-3. Look under **Built for your org** — you should see **Appy.AI** listed there.
-   <Frame>
-     ![Screenshot 2026 04 06 At 4 32 58 PM](/images/Screenshot-2026-04-06-at-4.32.58-PM.png)
-   </Frame>
-4. Click **Open** to start a direct message with the Appy.AI bot.
-
-<Info>
-  If you don't see Appy.AI in the app list, try signing out of Teams and signing back in. Teams can take a few minutes to refresh its app cache after a new app is installed.
-</Info>
-
-That's it — you're connected. You can now message Appy.AI directly in Teams just like any other colleague.
 
 ## Tips for using Appy.AI in Teams
 
 **Use direct messages for the best experience.** We recommend chatting with Appy.AI through direct messages rather than in public channels. Direct messages support file uploads and provide a smoother experience overall.
-
-**Only one person needs to run the connect command.** The `/connect` command links your entire Teams workspace to your Appy.AI organization. Other users in your org can simply find the app and start messaging — they don't need to run the command again.
 
 ## Troubleshooting
 
