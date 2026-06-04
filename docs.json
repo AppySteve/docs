@@ -77,7 +77,6 @@
           },
           {
             "group": "Changelog",
-            "hidden": true,
             "pages": [
               "changelog"
             ]
