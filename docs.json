@@ -28,6 +28,7 @@
               "your-ai-team/meet-your-team",
               "your-ai-team/working-with-your-team",
               "your-ai-team/customizing-your-team",
+              "pricing",
               {
                 "group": "Administration",
                 "pages": [
@@ -39,7 +40,6 @@
                   "your-ai-team/administration/schedules",
                   "your-ai-team/administration/integrations",
                   "your-ai-team/administration/billing",
-                  "pricing",
                   "your-ai-team/administration/profile"
                 ]
               },
