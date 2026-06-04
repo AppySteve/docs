@@ -79,8 +79,7 @@
             "group": "Changelog",
             "pages": [
               "changelog"
-            ],
-            "hidden": true
+            ]
           }
         ]
       }
