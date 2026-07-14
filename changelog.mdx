@@ -3,6 +3,18 @@ title: Changelog
 description: "Product updates, new features, and improvements to Appy."
 ---
 
+<Update label="July 14, 2026" description="v1.3">
+  ### New Features
+
+  * **Agent scripts can now read and write Excel files** — Scripts running in the code-run tool can import SheetJS (xlsx) to parse spreadsheets, manipulate data, and generate Excel files. Useful for agents that process data, build reports, or work with tabular content.
+
+  ### Improvements
+
+  * **Edit Knowledge files without leaving the page** — Markdown files in your shared Knowledge library now have an Edit button. Click it, make changes inline, and save — no more downloading, editing locally, and re-uploading.
+  * **Deleting a Knowledge file now asks for confirmation** — When you ask an agent to delete a shared Knowledge file, it pauses and shows a Delete/Cancel prompt before anything is removed. On Slack and Teams you get action buttons; on web you confirm by typing. Only the person who requested the deletion can approve it.
+  * **Scheduled agent reports now arrive as content, not a file path** — Agents that write their output to a file and deliver it via $file now send the actual report to Slack, Teams, or email as intended, rather than the raw reference.
+</Update>
+
 <Update label="July 13, 2026" description="v1.2">
   ### New Features
 
