@@ -57,12 +57,6 @@
             ]
           },
           {
-            "group": "Knowledge",
-            "pages": [
-              "knowledge"
-            ]
-          },
-          {
             "group": "Archive",
             "hidden": true,
             "pages": [
@@ -122,5 +116,11 @@
       "label": "Dashboard",
       "href": "https://builder.appy.ai/builder"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/knowledge",
+      "destination": "/your-ai-team/agent-capabilities/knowledge"
+    }
+  ]
 }
