@@ -2,7 +2,7 @@
 title: "Profile"
 ---
 
-Your profile and account settings live in a modal accessible from your avatar at the bottom-left of the navigation. There are three tabs: **Profile**, **Organization**, and **Members**.
+Your profile and account settings live in a modal accessible from your avatar at the bottom-left of the navigation. There are three tabs: **Profile**, **Organization**, and **Email**.
 
 ## Profile
 
@@ -22,14 +22,18 @@ The Organization tab shows your organization's name and public URL slug. These f
 
 If you need to leave the organization entirely, the **Leave Organization** button is available at the bottom of this tab.
 
-## Members
+## Email
 
-The Members tab shows everyone who has access to your Appy.AI organization. From here you can:
+The Email tab controls who can reach Violet by email, and is visible only to organization admins.
 
-- See all current members and their roles
-- Invite new team members by email
-- Remove access for members who have left
+**Violet's Email Address** — every organization has a dedicated inbound address for Violet, shown here with a copy-to-clipboard button. Send a message to this address and Violet processes it as a task, the same way she would a Slack DM.
+
+**Access control is an allowlist, not a blocklist.** Only mail from a sender on this list reaches Violet — everything else is rejected outright, not queued for review. If someone emails Violet and nothing happens, this is the first place to check.
+
+- **Allowed Domains** — any email from these domains is accepted (e.g., `company.com`). Add a domain and it covers every address at that domain.
+- **Allowed Email Addresses** — specific addresses that can email Violet, independent of domain.
+- **Blocked Email Addresses** — specific addresses to reject even when their domain is otherwise allowed. A block always overrides an allow, so you can permit a whole company domain and still exclude one address within it.
 
 <Note>
-  Only organization admins can invite or remove members. If you need to change your role, contact your org admin or reach out to [support@appy.ai](mailto:support@appy.ai).
+  Only organization admins can view or change the Email tab's settings.
 </Note>
