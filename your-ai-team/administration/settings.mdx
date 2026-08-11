@@ -1,0 +1,39 @@
+---
+title: "Settings"
+---
+
+Your profile and account settings live in a modal accessible from your avatar at the bottom-left of the navigation. There are three tabs: **Profile**, **Organization**, and **Email**.
+
+## Profile
+
+The Profile tab is where you manage your personal account information.
+
+**What you can update:**
+
+- **Profile photo** — Click the photo to upload a new image.
+- **First and last name** — Edit directly in the fields and save.
+- **Email addresses** — Your primary email is shown with a `Primary` badge. Add additional addresses using the input field and **Add** button.
+- **Password** — Click **Set password** to create or update your login password.
+- **Connected accounts** — Link third-party sign-in providers (e.g., Google) for one-click login. If none are connected, this section reads "No connected accounts."
+
+## Organization
+
+The Organization tab shows your organization's name and public URL slug. These fields are read-only — contact [support@appy.ai](mailto:support@appy.ai) if you need to change your organization name.
+
+If you need to leave the organization entirely, the **Leave Organization** button is available at the bottom of this tab.
+
+## Email
+
+The Email tab controls who can reach Violet by email, and is visible only to organization admins.
+
+**Violet's Email Address** — every organization has a dedicated inbound address for Violet, shown here with a copy-to-clipboard button. Send a message to this address and Violet processes it as a task, the same way she would a Slack DM.
+
+**Access control is an allowlist, not a blocklist.** Only mail from a sender on this list reaches Violet — everything else is rejected outright, not queued for review. If someone emails Violet and nothing happens, this is the first place to check.
+
+- **Allowed Domains** — any email from these domains is accepted (e.g., `company.com`). Add a domain and it covers every address at that domain.
+- **Allowed Email Addresses** — specific addresses that can email Violet, independent of domain.
+- **Blocked Email Addresses** — specific addresses to reject even when their domain is otherwise allowed. A block always overrides an allow, so you can permit a whole company domain and still exclude one address within it.
+
+<Note>
+  Only organization admins can view or change the Email tab's settings.
+</Note>
