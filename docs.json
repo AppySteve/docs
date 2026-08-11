@@ -25,6 +25,7 @@
             "pages": [
               "your-ai-team/overview",
               "your-ai-team/installation",
+              "your-ai-team/connect-microsoft-teams",
               "your-ai-team/meet-your-team",
               "your-ai-team/working-with-your-team",
               "your-ai-team/customizing-your-team",
@@ -51,29 +52,10 @@
                   "your-ai-team/agent-capabilities/behavior-and-instructions",
                   "your-ai-team/agent-capabilities/knowledge",
                   "your-ai-team/agent-capabilities/integrations",
-                  "your-ai-team/agent-capabilities/databases"
+                  "your-ai-team/agent-capabilities/databases",
+                  "your-ai-team/agent-capabilities/document-creation"
                 ]
               }
-            ]
-          },
-          {
-            "group": "Archive",
-            "hidden": true,
-            "pages": [
-              {
-                "group": "Builder",
-                "pages": [
-                  "builder/behavior",
-                  "builder/engage",
-                  "builder/settings",
-                  "builder/triggers"
-                ]
-              },
-              {
-                "group": "Subscriber",
-                "pages": []
-              },
-              "quickstart"
             ]
           },
           {
@@ -121,6 +103,134 @@
     {
       "source": "/knowledge",
       "destination": "/your-ai-team/agent-capabilities/knowledge"
+    },
+    {
+      "source": "/your-ai-team/behind-the-scenes/knowledge",
+      "destination": "/your-ai-team/agent-capabilities/knowledge"
+    },
+    {
+      "source": "/your-ai-team/behind-the-scenes/triggers",
+      "destination": "/your-ai-team/agent-capabilities/triggers"
+    },
+    {
+      "source": "/your-ai-team/behind-the-scenes/integrations",
+      "destination": "/your-ai-team/agent-capabilities/integrations"
+    },
+    {
+      "source": "/your-ai-team/behind-the-scenes/databases",
+      "destination": "/your-ai-team/agent-capabilities/databases"
+    },
+    {
+      "source": "/your-ai-team/behind-the-scenes/behavior",
+      "destination": "/your-ai-team/agent-capabilities/behavior-and-instructions"
+    },
+    {
+      "source": "/your-ai-team/behind-the-scenes/agent-settings",
+      "destination": "/your-ai-team/administration"
+    },
+    {
+      "source": "/your-ai-team/behind-the-scenes/configuration",
+      "destination": "/your-ai-team/administration"
+    },
+    {
+      "source": "/your-ai-team/behind-the-scenes/organization-settings",
+      "destination": "/your-ai-team/administration"
+    },
+    {
+      "source": "/quickstart",
+      "destination": "/your-ai-team/overview"
+    },
+    {
+      "source": "/builder/behavior",
+      "destination": "/your-ai-team/agent-capabilities/behavior-and-instructions"
+    },
+    {
+      "source": "/builder/engage",
+      "destination": "/your-ai-team/overview"
+    },
+    {
+      "source": "/builder/settings",
+      "destination": "/your-ai-team/administration"
+    },
+    {
+      "source": "/builder/triggers",
+      "destination": "/your-ai-team/agent-capabilities/triggers"
+    },
+    {
+      "source": "/builder-2/configuration",
+      "destination": "/your-ai-team/administration"
+    },
+    {
+      "source": "/builder-2/databases",
+      "destination": "/your-ai-team/agent-capabilities/databases"
+    },
+    {
+      "source": "/builder-2/integrations",
+      "destination": "/your-ai-team/agent-capabilities/integrations"
+    },
+    {
+      "source": "/builder-2/international",
+      "destination": "/your-ai-team/overview"
+    },
+    {
+      "source": "/builder-2/knowledge",
+      "destination": "/your-ai-team/agent-capabilities/knowledge"
+    },
+    {
+      "source": "/builder-2/monetize",
+      "destination": "/your-ai-team/overview"
+    },
+    {
+      "source": "/builder-2/overview",
+      "destination": "/your-ai-team/overview"
+    },
+    {
+      "source": "/builder-2/preferences",
+      "destination": "/your-ai-team/administration"
+    },
+    {
+      "source": "/builder-2/promote",
+      "destination": "/your-ai-team/overview"
+    },
+    {
+      "source": "/builder-2/publish",
+      "destination": "/your-ai-team/overview"
+    },
+    {
+      "source": "/builder-2/theme",
+      "destination": "/your-ai-team/administration"
+    },
+    {
+      "source": "/builder-2/your_organization",
+      "destination": "/your-ai-team/administration"
+    },
+    {
+      "source": "/subscriber/account",
+      "destination": "/your-ai-team/administration/profile"
+    },
+    {
+      "source": "/subscriber/billing",
+      "destination": "/your-ai-team/administration/billing"
+    },
+    {
+      "source": "/subscriber/onboarding",
+      "destination": "/your-ai-team/overview"
+    },
+    {
+      "source": "/subscriber/organizations",
+      "destination": "/your-ai-team/administration"
+    },
+    {
+      "source": "/subscriber/overview",
+      "destination": "/your-ai-team/overview"
+    },
+    {
+      "source": "/subscriber/preferences",
+      "destination": "/your-ai-team/administration/profile"
+    },
+    {
+      "source": "/subscriber/support",
+      "destination": "/your-ai-team/overview"
     }
   ]
 }
