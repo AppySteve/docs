@@ -1,0 +1,48 @@
+---
+title: "Why an Automation Stopped Running"
+description: "What it means when a schedule shows Needs reconnection or Auto-paused, and how to get it running again."
+icon: "triangle-exclamation"
+---
+
+If a report stopped arriving, a schedule shows something other than **Active**, or a connected app suddenly seems disconnected, this page explains why — and how to fix it in under a minute.
+
+## The short version
+
+Appy automatically pauses an automation when it can no longer run reliably, and tells you why. You never come back to a silently broken schedule. The two most common reasons:
+
+- **An integration lost its connection** — a token expired, or access was revoked upstream. The schedule shows **Needs reconnection**.
+- **The automation failed repeatedly** — the last two runs in a row both failed. The schedule shows **Auto-paused**.
+
+Either way, you'll hear about it — by email, and by direct message in Slack or Teams if you're connected there — and the fix is the same: **ask Violet to reconnect the integration** (or tell her what changed), and the schedule picks back up on its normal cadence. Nothing else needs to change.
+
+## Why this happens
+
+Appy would rather stop an automation and tell you than let it run on bad data or fail silently in the background. Two conditions trigger an automatic pause:
+
+<AccordionGroup>
+  <Accordion title="Needs reconnection">
+    An integration the automation depends on — your CRM, your inbox, a connected spreadsheet — lost its authorization. This can happen when a token expires, a password changes, or access is revoked from the other side.
+
+    Appy won't run an automation against a broken connection, so it pauses the schedule rather than let it fail (or worse, run with stale access) on the next trigger.
+  </Accordion>
+
+  <Accordion title="Auto-paused">
+    The automation's last two runs in a row both failed. Rather than keep retrying — and keep failing — Appy stops it and flags it for you to look at.
+
+    This is usually a sign something upstream changed: a renamed column, a deleted record the automation expected, a permissions change. Check the recent runs on the [Schedules page](/your-ai-team/administration/schedules) to see what went wrong before asking Violet to resume it.
+  </Accordion>
+</AccordionGroup>
+
+Both states are visible right on the [Schedules page](/your-ai-team/administration/schedules), next to the affected automation.
+
+## How you're notified
+
+The moment an automation is paused, its owner is notified — by email, and by direct message in Slack or Teams if you have one connected. The message says plainly what happened and what to do next. You won't discover a paused automation only by noticing a report never arrived.
+
+## How to fix it
+
+1. **Read the notification or the schedule's status** — it tells you which of the two states applies.
+2. **For "Needs reconnection":** ask Violet to reconnect the integration, or reconnect it yourself from the [Integrations page](/your-ai-team/administration/integrations). Once the connection is live again, ask Violet to resume the schedule.
+3. **For "Auto-paused":** check the recent runs on the Schedules page for the error, fix whatever caused it (often on the connected app's side), then ask Violet to resume the schedule.
+
+Once resumed, the schedule picks back up on its original cadence — nothing else needs to be reconfigured.

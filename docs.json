@@ -52,7 +52,8 @@
                   "your-ai-team/agent-capabilities/knowledge",
                   "your-ai-team/agent-capabilities/integrations",
                   "your-ai-team/agent-capabilities/databases",
-                  "your-ai-team/agent-capabilities/document-creation"
+                  "your-ai-team/agent-capabilities/document-creation",
+                  "your-ai-team/agent-capabilities/connection-health"
                 ]
               }
             ]
