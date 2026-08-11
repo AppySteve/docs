@@ -10,6 +10,8 @@ Triggers control when your agents start working. By default, agents respond when
 - **On demand** — @mention or DM Appy.AI in Slack or Teams and your agent gets to work immediately. This is how most interactions happen.
 - **Scheduled** — Agents run on a recurring schedule: daily, weekly, monthly, or at a specific time. Great for morning briefings, weekly competitive reports, or monthly performance summaries.
 - **Integration triggers** — External tools can kick off your agents automatically. When something happens in another system — like a new lead added to your CRM — your agent handles it.
+- **Webhook** — External systems trigger your agent by sending an HTTP POST request. This is how you connect your agent to tools like Zapier, Make, your CRM, or a form on your own website.
+- **Email** — Every agent has its own email address. Send it a message and it starts working on what you asked, with the email content as its task.
 
 You can stack multiple triggers on the same agent. A reporting agent might run on a weekly schedule and also be available to message anytime for ad-hoc requests.
 
@@ -48,3 +50,40 @@ Violet is your control panel for scheduled work. To pause, change, or remove a s
 To see what's currently scheduled, visit [https://builder.appy.ai/schedules](https://builder.appy.ai/schedules).
 
 > **Why route everything through Violet?** Violet has full context on your team — which agents you have, what they're good at, and how they connect to your tools. Owning the schedule flow means nothing drifts out of sync with the agent running it.
+
+## Webhook triggers
+
+Webhook triggers let external systems kick off an agent by sending it an HTTP request — the connection point for Zapier, Make, your CRM, a form on your website, or any tool that can make a POST call.
+
+To set one up, tell the agent what should happen and what the trigger should be called — for example, "Set up a webhook trigger called `new-lead` that drafts an outreach email whenever it fires." The agent creates the trigger and gives you back a unique URL:
+
+```
+POST https://builder.appy.ai/api/trigger/webhook/{agent}/{shortId}
+```
+
+Send a POST request to that URL from your external tool. The agent runs the task you defined when you set up the trigger, and if the request includes a body, that payload is attached to the run so the agent can reference "the incoming data" without you having to template it in.
+
+<Info>
+  Webhook trigger endpoints accept JSON, form-encoded, and multipart bodies — so a plain HTML form on your own website can post to a webhook trigger directly from the browser, no backend glue required. Endpoints also allow cross-origin requests, since the URL itself (not a cookie or API key) is the credential.
+</Info>
+
+### Examples
+
+- **Marketing agency** — A new lead from a website form triggers an outreach sequence.
+- **Business coach** — A client completing an intake form triggers a welcome sequence.
+- **SaaS company** — A new trial signup triggers an onboarding email series.
+
+## Email triggers
+
+Every agent has its own email address. Send it a message — or forward one to it — and the agent starts working, with the email's subject, body, and attachments passed along as its task.
+
+This is useful for forwarding an inbound request straight to the agent responsible for it, or for systems that can send email but can't make an HTTP call.
+
+## Getting started with triggers
+
+Here's how to set up your first triggers:
+
+1. **Enable on demand.** This should almost always be on. It lets you message your agent anytime.
+2. **Identify routine tasks.** What work happens on a schedule? Set up scheduled triggers for those.
+3. **Connect external tools.** If you use Zapier, Make, or other automation tools, set up a webhook trigger and connect them.
+4. **Test each trigger.** Make sure each one works the way you expect before relying on it.
