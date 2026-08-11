@@ -7,7 +7,7 @@ description: Your organization's shared reference library — upload once, every
 
 Knowledge is your organization's shared reference library — the pricing sheets, product docs, FAQs, and policies your agents need to do work that's actually about your business. Upload your documents once and every agent in your workspace can draw on them whenever a task calls for them.
 
-***
+---
 
 ## What is Knowledge?
 
@@ -15,27 +15,32 @@ Knowledge is a shared file library built into your Appy.AI workspace. It works l
 
 Without Knowledge, every request starts from scratch. You attach the pricing sheet again, paste the product details again, explain the policy again. With Knowledge, your agents know what you've filed — and they use it.
 
-<img src="https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=d1ce4d5039e817abd03639efbaf469e1" alt="The Knowledge library showing organized folders and files" data-og-width="2858" width="2858" data-og-height="1574" height="1574" data-path="images/knowledge-library.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?w=280&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=60a748c65cdce9bb27fb380ecf0aab33 280w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?w=560&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=1c89b76c66f01aedbab9f26fa672ae3c 560w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?w=840&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=0af577c042092e4f6e890d37d92b1ae6 840w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?w=1100&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=a3f9bdd4c08bcc333199025d72a0467f 1100w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?w=1650&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=ca8f7532bfe397abd67f6823280423a0 1650w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?w=2500&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=88a5468ea6e6df15f645718c31261f1b 2500w" />
+<img src="https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=d1ce4d5039e817abd03639efbaf469e1" alt="The Knowledge library showing organized folders and files" data-og-width="2858" width="2858" data-og-height="1574" height="1574" data-path="images/knowledge-library.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?w=280&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=60a748c65cdce9bb27fb380ecf0aab33 280w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?w=560&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=1c89b76c66f01aedbab9f26fa672ae3c 560w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?w=840&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=0af577c042092e4f6e890d37d92b1ae6 840w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?w=1100&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=a3f9bdd4c08bcc3331990025d72a0467f 1100w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?w=1650&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=ca8f7532bfe397abd67f682328042 3a0 1650w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-library.png?w=2500&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=88a5468ea6e6df15f6457187 51ae79f8 2500w" />
 
-***
+---
 
 ## Who can do what
 
-| Role        | Can access Knowledge library | Can upload and edit files |
-| ----------- | ---------------------------- | ------------------------- |
-| Admin       | ✅ Yes                        | ✅ Yes                     |
-| Team member | View only                    | ❌ No                      |
-| Agents      | Read automatically           | ❌ No                      |
+| Role | Can access Knowledge library | Can upload and edit files |
+| ----------- | ------------------------------- | -------------------------- |
+| Admin | ✅ Yes | ✅ Yes |
+| Team member | ✅ Yes | ✅ Yes |
+| Guest | ✅ Yes (read-only) | ❌ No |
+| Agents | Read automatically | ❌ No (see below) |
 
-**Admins** are the library's curators. They upload, edit, organize, and remove documents. This keeps a clear editor of record — not a free-for-all.
+**Admins and team members have identical access.** Both can view, upload, create folders, rename, move, copy, delete, and edit and save markdown files. Knowledge is a fully shared workspace resource — there's no admin-only gate on managing it.
 
-**Team members** benefit from what admins file. When an agent works on a task for any team member, it can draw on the shared library.
+**Guests** have read-only access: they can browse, preview, and download files, but all write operations are rejected.
 
-**Agents** read the library but cannot change it. What's in there is exactly what your team put there.
+**Agents** read the library automatically but can't write to it on their own initiative — what's in there reflects what your team has filed. They can still get files into Knowledge indirectly: see [Asking Violet to save a file](#asking-violet-to-save-a-file) below.
 
-<img src="https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=81ff46a1d125e8cbc0cacc816bd02edc" alt="The Knowledge page with the brand folder and file listing" data-og-width="2882" width="2882" data-og-height="1638" height="1638" data-path="images/knowledge-brand-folder.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?w=280&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=7d88cdd9f54863788e999ac6745588b1 280w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?w=560&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=4fba874629664c4f4ff999be07333591 560w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?w=840&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=9c5a54f575e28a79be18ef4d30731510 840w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?w=1100&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=d17562a197f2d31d2473525c27c618ac 1100w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?w=1650&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=147e92e6dc0ee3599c48748751ae79f8 1650w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?w=2500&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=a312b006edb54a3a4e34932918a3e5c3 2500w" />
+<Note>
+  `/brand` and `/templates` (and the `brand.md` and `templates/README.md` files inside them) can't be renamed, moved, or deleted by anyone, including admins. Their contents, however, are fully editable — update your brand guidelines or template structure anytime.
+</Note>
 
-***
+<img src="https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=81ff46a1d125e8cbc0cacc816bd02edc" alt="The Knowledge page with the brand folder and file listing" data-og-width="2882" width="2882" data-og-height="1638" height="1638" data-path="images/knowledge-brand-folder.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?w=280&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=7d88cdd9f5486378 8e999ac6745588b1 280w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?w=560&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=4fba874629664c4f4ff999be07333591 560w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?w=840&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=9c5a54f575e28a79be18ef4d3073151 0 840w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?w=1100&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=d17562a197f2d31d2473525c27c618ac 1100w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?w=1650&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=147e92e6dc0ee3599c48748751ae79f8 1650w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-brand-folder.png?w=2500&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=a312b006edb54a3a4e34932918a3e5c3 2500w" />
+
+---
 
 ### Uploading documents
 
@@ -91,15 +96,15 @@ If a useful document comes up mid-conversation, you can ask Violet to save it to
 
 > "Violet, save this to Knowledge."
 
-She'll file it for you without interrupting the task.
+She'll file it for you without interrupting the task. You can also copy an artifact an agent produced straight into Knowledge from the artifact view — useful for turning agent output into a reusable reference without leaving the conversation.
 
-<img src="https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=d25a1f63a73c33751c2694ff7312c47e" alt="The Knowledge page in edit mode showing file editing" data-og-width="2884" width="2884" data-og-height="1750" height="1750" data-path="images/knowledge-edit-mode.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?w=280&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=5bcbaf53710ab3370e33f7e60bcc7c38 280w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?w=560&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=4b4dca85e3582526a45f0352ee6f22d6 560w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?w=840&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=19c1d1fefc27a55b3c4cab389e597187 840w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?w=1100&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=80cad7801a7c5f277a7430f5f6e3597e 1100w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?w=1650&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=7d42938585a75946d60cc9e04e5cf79f 1650w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?w=2500&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=f72657d392b4af759cf367d9f225bb17 2500w" />
+<img src="https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=d25a1f63a73c33751c2694ff7312c47e" alt="The Knowledge page in edit mode showing file editing" data-og-width="2884" width="2884" data-og-height="1750" height="1750" data-path="images/knowledge-edit-mode.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?w=280&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=5bcbaf53710ab3370e33f7e60bcc7c38 280w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?w=560&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=4b4dca85e3582526a45f0352ee6f22d6 560w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?w=840&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=19c1d1fefc27a55b3c4cab389e597187 840w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?w=1100&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=80cad7801a7c5f277a7430f5f6e3597e 1100w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?w=1650&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=7d4293858 5a75946d60cc9e04e5cf79f 1650w, https://mintcdn.com/appyai/8IEizO1SWrawWBfb/images/knowledge-edit-mode.png?w=2500&fit=max&auto=format&n=8IEizO1SWrawWBfb&q=85&s=f72657d392b4af759cf367d9f225bb17 2500w" />
 
 ### Deleting a file
 
 Click the file to open it, then click the **delete** icon. The file is removed from the library immediately. Agents will no longer reference it.
 
-***
+---
 
 ## What agents use Knowledge for
 
@@ -107,7 +112,7 @@ When an agent works on a task, it searches your Knowledge library for documents 
 
 You don't need to tell the agent which document to use. It finds the right one from what you've filed.
 
-***
+---
 
 ## Frequently asked questions
 
@@ -125,7 +130,7 @@ You don't need to tell the agent which document to use. It finds the right one f
   </Accordion>
 
   <Accordion title="Can agents write to Knowledge?">
-    No. Agents can read documents from the library but cannot add, edit, or delete them. Your library stays exactly as your team configured it.
+    Not on their own initiative — agents don't edit the library unless a person acts on it. But agents don't leave you stuck with manual re-uploads either: you can copy an artifact an agent produces straight into Knowledge, or simply ask Violet to save something there mid-conversation, and it's filed without you leaving the task.
   </Accordion>
 
   <Accordion title="What if I delete a document by mistake?">
@@ -133,7 +138,7 @@ You don't need to tell the agent which document to use. It finds the right one f
   </Accordion>
 </AccordionGroup>
 
-***
+---
 
 ## Tips
 

@@ -1,10 +1,11 @@
 ---
 title: "Integrations"
+description: "Connect, manage, and remove the tools your agents use — personal or team-wide."
 ---
 
 Integrations let your agents do real work inside the tools your business already uses. When an agent is connected to Gmail, it can send emails. Connected to GitHub, it can open pull requests. Connected to Google Sheets, it can read and write data.
 
-The Integrations page shows every tool currently connected to your account — organized by who connected them.
+The Integrations page shows every tool currently connected to your account — organized by who connected them — and is where you add, manage, and remove connections.
 
 <Frame>
   ![Screenshot 2026 05 28 At 10 14 03 AM](/images/Screenshot-2026-05-28-at-10.14.03-AM.png)
@@ -17,7 +18,7 @@ At the top of the page, the **Communication channels** section shows how your ag
 - **Slack** — Connect your Slack workspace to message agents in channels and DMs. Shows `Connected` when your workspace is linked.
 - **Teams** — Connect Microsoft Teams to run agents from any chat or channel.
 
-These are your primary interfaces for working with your agents day-to-day. See [Installation](/your-ai-team/installation) for setup instructions.
+These are your primary interfaces for working with your agents day-to-day. See [Installation](/your-ai-team/installation) for setup instructions. Disconnecting a channel is admin-only.
 
 ## Personal integrations
 
@@ -37,18 +38,28 @@ Org-wide integrations are typically set up by an admin and represent tools the w
 
 ## Connecting a new integration
 
-New integrations are connected through Violet in chat — there's no direct "add" button on this page. Tell Violet what you want to connect:
+Click **Add integration** in the page header to open a panel with a search field. Find the tool you want and click it to open the Connect dialog.
 
-- "Connect my Gmail account"
-- "Add our company's HubSpot CRM"
-- "Connect Linear so you can create issues"
+The dialog includes:
 
-Violet will walk you through authorization. Once connected, the integration appears on this page immediately.
+- **Access** — Choose **Personal** or **Team**. Team is only selectable by admins.
+- **Name** — Required only when the chosen scope already has a connection to that same integration (placeholder "e.g. Marketing account"). This is how you run two connections to one tool — for example, a personal HubSpot login alongside the team's shared HubSpot account.
+- Integration-specific configuration fields and/or an **API Key** field, for integrations that don't use OAuth.
+- **Connect** and **Cancel**.
 
-## Disconnecting an integration
+For OAuth integrations, clicking **Connect** opens an authorization popup. Once you approve access, the connection registers automatically and appears on this page.
 
-Ask Violet to disconnect an integration through chat. There's no direct "disconnect" button on this page.
+You can also ask Violet to connect something in chat — "Connect my Gmail account" or "Add our company's HubSpot CRM" both work, and she'll walk you through it.
+
+## Managing a connection
+
+Click any integration card to open its connection detail page. From there you can:
+
+- **Reconnect** — Appears when a connection needs attention (e.g., an expired token), surfaced via a "Needs attention" alert.
+- **Delete integration** — Available from the "⋯" menu. A confirmation dialog warns that deleting permanently removes the connection and revokes access; for organization-scoped connections, it carries an additional warning that this affects the whole team. Non-admins see this option disabled with the tooltip "Only admins can delete team integrations."
+
+The detail page also shows the connection's status, scope, auth method, who connected it and when, and a searchable list of the actions available through that connection.
 
 <Tip>
-  Personal integrations you connect are only available for your own tasks. To make an integration available team-wide, ask Violet to connect it as an organization integration.
+  Personal integrations you connect are only available for your own tasks. To make an integration available team-wide, choose **Team** as the access level when connecting it (admins only), or ask Violet to connect it as an organization integration.
 </Tip>
