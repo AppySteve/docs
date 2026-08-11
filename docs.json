@@ -34,11 +34,14 @@
                 "pages": [
                   "your-ai-team/administration",
                   "your-ai-team/administration/dashboard",
-                  "your-ai-team/administration/agents",
-                  "your-ai-team/administration/activity",
-                  "your-ai-team/administration/analytics",
                   "your-ai-team/administration/schedules",
+                  "your-ai-team/administration/artifacts",
+                  "your-ai-team/administration/websites",
                   "your-ai-team/administration/integrations",
+                  "your-ai-team/administration/activity",
+                  "your-ai-team/administration/agents",
+                  "your-ai-team/administration/analytics",
+                  "your-ai-team/administration/members",
                   "your-ai-team/administration/billing",
                   "your-ai-team/administration/settings"
                 ]
