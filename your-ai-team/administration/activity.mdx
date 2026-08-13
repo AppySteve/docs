@@ -1,5 +1,7 @@
 ---
 title: "Activity"
+description: "A live feed of every task your agents are running, completed, or are waiting on — with a full-screen detail view for anything that involved delegation."
+icon: "list-check"
 ---
 
 Activity is your audit trail. Every task triggered by anyone on your team — through Slack, Teams, email, a schedule, or a webhook — appears here in real time. You can see what's running, what's done, and who asked for what.
@@ -17,16 +19,17 @@ Each card in the feed shows:
 - **Which agents were involved** — Violet and any specialists she delegated to.
 - **Status** — Current state of the task (see below).
 - **Progress** — A completion bar shows how far along a running task is.
-- **Source** — The channel the task came from (Slack, web, email, etc.), shown as an icon in the top-right corner of each card.
+- **Source** — The channel the task came from (Slack, Teams, web, email, etc.), shown as an icon in the top-right corner of each card.
 
 ## Task statuses
 
 | Status | Meaning |
 | --- | --- |
-| **Working** | The agent is actively executing the task right now. |
+| **Running** | The agent is actively working on the task right now. |
 | **Done** | The task completed successfully. |
-| **Failed** | The task encountered an error and didn't complete. |
-| **Idle** | The agent's action is complete and waiting for user input |
+| **Error** | The task hit an error and didn't complete. |
+| **Blocked** | The agent needs input from you before it can continue. |
+| **Idle** | No sub-tasks have started yet. |
 
 ## Filtering activity
 
@@ -36,10 +39,13 @@ Use the filter tabs at the top to narrow by source:
 | --- | --- |
 | **All** | Every task across all channels |
 | **Web** | Tasks started from the web platform |
-| **Slack** | Tasks initiated from Slack |
+| **Slack** | Tasks initiated from Slack (shown when Slack is connected) |
+| **Teams** | Tasks initiated from Microsoft Teams (shown when Teams is connected) |
 | **Email** | Tasks triggered by email |
 | **Schedule** | Tasks run automatically on a schedule |
 | **Webhook** | Tasks triggered by an external webhook |
+
+**Only mine (admins only)** — Admins can toggle the feed down to just the tasks they personally started. Members already see only their own tasks, so this control isn't shown to them.
 
 ## Task detail view
 
@@ -47,12 +53,9 @@ Use the filter tabs at the top to narrow by source:
   ![Screenshot 2026 05 28 At 10 12 20 AM](/images/Screenshot-2026-05-28-at-10.12.20-AM.png)
 </Frame>
 
-Click any card to open the full task detail. You'll see:
+Click any card to open the full-screen detail view. If the task involved delegation, you'll see a coverflow-style carousel — one slide per sub-agent Violet brought in, plus a slide for Violet herself. Each slide shows that agent's task list (or a summary, if there's nothing to list), the files it produced, and its status.
 
-- A summary of the task and the inputs provided
-- The plan Violet created, including each step and which agent handled it
-- Files or artifacts the agent produced
-- Time saved and estimated cost saved (beta)
+Above the carousel, a stats bar shows the task count and file count for the whole run.
 
 <Tip>
   The task detail view is useful for reviewing what an agent actually did — especially for scheduled tasks that run without you prompting them.

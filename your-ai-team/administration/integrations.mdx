@@ -1,6 +1,7 @@
 ---
 title: "Integrations"
-description: "Connect, manage, and remove the tools your agents use — personal or team-wide."
+description: "Connect, manage, and reconnect the tools your agents use — personal or team-wide — and see exactly what each connection can do."
+icon: "plug"
 ---
 
 Integrations let your agents do real work inside the tools your business already uses. When an agent is connected to Gmail, it can send emails. Connected to GitHub, it can open pull requests. Connected to Google Sheets, it can read and write data.
@@ -28,7 +29,7 @@ Each row shows:
 
 - The tool's logo and name
 - **Connection status** — `Connected` (active) or `Pending` (authorization in progress)
-- For connected tools: who connected it and when (e.g., "Connected May 21, 2026 by [brian@appy.ai](mailto:brian@appy.ai)")
+- For connected tools: who connected it and when (e.g., "Connected May 21, 2026 by brian@appy.ai")
 
 ## Team integrations
 
@@ -53,12 +54,18 @@ You can also ask Violet to connect something in chat — "Connect my Gmail accou
 
 ## Managing a connection
 
-Click any integration card to open its connection detail page. From there you can:
+Click any integration card to open its connection detail page. What you see here depends on the type of connection:
 
-- **Reconnect** — Appears when a connection needs attention (e.g., an expired token), surfaced via a "Needs attention" alert.
-- **Delete integration** — Available from the "⋯" menu. A confirmation dialog warns that deleting permanently removes the connection and revokes access; for organization-scoped connections, it carries an additional warning that this affects the whole team. Non-admins see this option disabled with the tooltip "Only admins can delete team integrations."
+- **Communication channels** (Slack, Teams) show a simpler detail page — just the connection status and a **Disconnect** button, admin-only.
+- **Service integrations** (everything else — your CRM, email, spreadsheets, and so on) show a fuller detail page: **Status** (Active, or a "Needs attention" alert if the connection has expired), **Scope** (Personal or Team), **Auth method**, who connected it and when, and an **Available actions** list — every action Violet can take through that connection, in a searchable list so you can quickly check whether a specific capability is available before asking for it.
 
-The detail page also shows the connection's status, scope, auth method, who connected it and when, and a searchable list of the actions available through that connection.
+### Reconnecting an expired connection
+
+If a connection's authorization has expired, its card shows a **"Needs attention"** alert with a **Reconnect** button right on the detail page. Click it to run through the same authorization flow you used originally — once you approve access again, the connection returns to Active and any schedules or tasks that depend on it resume normally.
+
+### Removing a connection
+
+From the "⋯" menu, choose **Delete integration**. A confirmation dialog warns that deleting permanently removes the connection and revokes access; for organization-scoped connections, it carries an additional warning that this affects the whole team. Non-admins see this option disabled with the tooltip "Only admins can delete team integrations."
 
 <Tip>
   Personal integrations you connect are only available for your own tasks. To make an integration available team-wide, choose **Team** as the access level when connecting it (admins only), or ask Violet to connect it as an organization integration.

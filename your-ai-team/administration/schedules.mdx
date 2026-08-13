@@ -1,11 +1,31 @@
 ---
 title: "Schedules"
-description: "See every scheduled task across your account, and ask Violet to create, change, or remove one."
+description: "See every scheduled task across your account, what state it's in, and why one might have stopped running — Violet creates, changes, and removes them."
+icon: "calendar"
 ---
 
 Schedules let your agents work without you prompting them. Set up a recurring task once — Violet runs it automatically on whatever cadence you define, delivering results right in Slack or Teams.
 
 The Schedules page is a read-only view of every scheduled task across your account. To create, modify, or remove schedules, ask Violet in chat.
+
+## Status badges
+
+Every schedule shows one of five statuses:
+
+| Status | Meaning |
+| --- | --- |
+| **Active** | Running on its normal cadence. |
+| **Paused** | You (or an admin) paused it. Ask Violet to resume it whenever you're ready. |
+| **Needs reconnection** | An integration this schedule depends on lost its connection. |
+| **Auto-paused** | The schedule failed several times in a row, so Appy paused it automatically. |
+| **Out of credits** | Your organization is out of credits — this and other schedules are paused until you add more. |
+
+**Needs reconnection** and **Auto-paused** are the two statuses worth understanding before you see them, because they're what a stopped automation looks like from the outside. If a report you rely on suddenly stops arriving, one of these two is almost always why:
+
+- **Needs reconnection** means a tool the schedule depends on — a Slack connection, a CRM, a shared inbox — had its authorization expire. The schedule can't run until that connection is restored. Ask Violet to reconnect it, and the schedule picks back up on its next scheduled run.
+- **Auto-paused** means the schedule tried and failed repeatedly, so Appy stopped retrying rather than fail silently forever. Check the run history in the schedule's detail view to see what went wrong, then ask Violet to resume it once the underlying issue is fixed.
+
+Both statuses exist so a schedule that stops working tells you why instead of just going quiet.
 
 ## List view
 
@@ -18,8 +38,8 @@ The default **List** view shows each schedule as a card with:
 - **Task name** — What the agent is asked to do when the schedule fires.
 - **Recurrence** — How often it runs (e.g., "Weekly Monday at 10:00 AM Mountain").
 - **Description** — A plain-language summary of the task.
-- **Status** — `Active` (running as scheduled) or `Paused`.
-- **Run state** — Whether the schedule is currently `Running` or waiting for its next trigger.
+- **Status** — One of the five badges above.
+- **Last run** — Status and relative time of the most recent run.
 
 ## Calendar view
 
@@ -27,9 +47,21 @@ The default **List** view shows each schedule as a card with:
   ![Screenshot 2026 05 28 At 10 13 51 AM](/images/Screenshot-2026-05-28-at-10.13.51-AM.png)
 </Frame>
 
-Switch to **Calendar** view to see scheduled tasks plotted against dates. Use the day selector at the top to navigate the week. Each scheduled run appears at its exact time on the correct day — click any entry to see the full task description.
+Switch to **Calendar** view to see the coming week of scheduled runs plotted against dates. Use the day selector at the top to navigate. Each scheduled run appears at its exact time on the correct day — click any entry to see the full task description.
 
 This is useful for spotting clustering, conflicts, or stretches where no automation is active.
+
+## Schedule detail view
+
+Click any schedule to open its detail view:
+
+- **Next run** — When the schedule is due to fire next.
+- **Past 7 days** — How many times it's run in the last week, and the success rate across those runs.
+- **Delivers to** — Where results land (a Slack DM or channel, Teams, or "Show in app" if there's no chat delivery configured).
+- **Schedule** — The cadence in plain language, like "Every weekday at 9:00 AM MDT."
+- **Run history** — Every recent run, with its duration and, for any failed run, the error message that explains what went wrong.
+
+The run history is the first place to look when a schedule shows Auto-paused — the error messages there usually tell you exactly what to fix.
 
 ## Creating or modifying a schedule
 
