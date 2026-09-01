@@ -3,23 +3,23 @@ title: Changelog
 description: "Product updates, new features, and improvements to Appy."
 ---
 
-<Update label="July 31, 2026" description="v1.7">
+<Update label="August 30, 2026" description="v1.11">
+
+### New Features
+- **Ask for help without leaving the conversation** — Type --support in any conversation with an agent (web, Slack, Teams, Telegram, or email) and our support team gets a case opened immediately with everything they need to jump in — no separate email or ticket required.
 
 ### Improvements
-- **OneDrive and SharePoint files work in Microsoft Teams** — Paste a OneDrive or SharePoint link in Teams, or pick a file from the file picker, and agents can see and work with it directly. No manual re-upload needed.
-- **CC and BCC on agent-sent emails** — When an agent sends an email on your behalf, you can now ask it to CC or BCC additional recipients — including reply-to addressing.
-- **Long tasks now continue without interruption** — When an agent runs out of context mid-task, it now hands the work off to a fresh session automatically and picks up exactly where it left off. Your task keeps running; you never see an error.
-- **Clearer messages when integrations hit errors** — When a connected app returns an error, agents now show a plain, actionable explanation instead of raw error text — so they can self-correct or tell you exactly what went wrong.
+- **Safer edits to shared knowledge files** — When an agent is about to overwrite or delete a file in your organization's shared knowledge base, it now asks you to confirm first (in Slack and Teams), instead of silently proceeding or renaming around the conflict.
+- **Better, more flexible AI video generation** — Video generation now supports Veo 3.1 and MiniMax H3, with more resolution options (up to 4K) and duration choices. Requests outside a model's limits are automatically adjusted to the closest supported option instead of failing.
 
 </Update>
 
-<Update label="August 10, 2026" description="v1.8">
+<Update label="August 21, 2026" description="v1.10">
 
 ### Improvements
-- **Shared PDFs, audio, and Office files now render correctly on public share links** — PDFs, audio files, and Office documents (xlsx, docx, pptx) now display properly on public share links instead of showing "Failed to load PDF file."
-
-### Integrations
-- **QuickBooks, Salesforce, and Zoho Books connect in one click** — No more hunting for base URLs, auth URLs, or token endpoints — the connect flow fills in the standard values automatically.
+- **Support link works again** — The "Contact Customer Support" button, shown after repeated automation failures, now correctly opens the support widget instead of landing on a broken page.
+- **A warmer welcome in Microsoft Teams** — When Violet joins a Teams conversation, the intro is now a rich card matching the Slack onboarding experience, instead of plain text.
+- **Reach Violet from anywhere in the app** — The "Message Violet" shortcut now lives at the top of the sidebar nav on every page, not just the dashboard.
 
 </Update>
 
@@ -37,26 +37,25 @@ description: "Product updates, new features, and improvements to Appy."
 
 </Update>
 
-<Update label="August 21, 2026" description="v1.10">
+<Update label="August 10, 2026" description="v1.8">
 
 ### Improvements
-- **Support link works again** — The "Contact Customer Support" button, shown after repeated automation failures, now correctly opens the support widget instead of landing on a broken page.
-- **A warmer welcome in Microsoft Teams** — When Violet joins a Teams conversation, the intro is now a rich card matching the Slack onboarding experience, instead of plain text.
-- **Reach Violet from anywhere in the app** — The "Message Violet" shortcut now lives at the top of the sidebar nav on every page, not just the dashboard.
+- **Shared PDFs, audio, and Office files now render correctly on public share links** — PDFs, audio files, and Office documents (xlsx, docx, pptx) now display properly on public share links instead of showing "Failed to load PDF file."
+
+### Integrations
+- **QuickBooks, Salesforce, and Zoho Books connect in one click** — No more hunting for base URLs, auth URLs, or token endpoints — the connect flow fills in the standard values automatically.
 
 </Update>
 
-<Update label="August 30, 2026" description="v1.11">
-
-### New Features
-- **Ask for help without leaving the conversation** — Type --support in any conversation with an agent (web, Slack, Teams, Telegram, or email) and our support team gets a case opened immediately with everything they need to jump in — no separate email or ticket required.
+<Update label="July 31, 2026" description="v1.7">
 
 ### Improvements
-- **Safer edits to shared knowledge files** — When an agent is about to overwrite or delete a file in your organization's shared knowledge base, it now asks you to confirm first (in Slack and Teams), instead of silently proceeding or renaming around the conflict.
-- **Better, more flexible AI video generation** — Video generation now supports Veo 3.1 and MiniMax H3, with more resolution options (up to 4K) and duration choices. Requests outside a model's limits are automatically adjusted to the closest supported option instead of failing.
+- **OneDrive and SharePoint files work in Microsoft Teams** — Paste a OneDrive or SharePoint link in Teams, or pick a file from the file picker, and agents can see and work with it directly. No manual re-upload needed.
+- **CC and BCC on agent-sent emails** — When an agent sends an email on your behalf, you can now ask it to CC or BCC additional recipients — including reply-to addressing.
+- **Long tasks now continue without interruption** — When an agent runs out of context mid-task, it now hands the work off to a fresh session automatically and picks up exactly where it left off. Your task keeps running; you never see an error.
+- **Clearer messages when integrations hit errors** — When a connected app returns an error, agents now show a plain, actionable explanation instead of raw error text — so they can self-correct or tell you exactly what went wrong.
 
 </Update>
-
 
 <Update label="July 22, 2026" description="v1.6">
   ### New Features
@@ -69,14 +68,12 @@ description: "Product updates, new features, and improvements to Appy."
   * **Claude Sonnet 5 available** — Anthropic's latest model is now available to your agents, bringing improved reasoning and accuracy to complex tasks.
 </Update>
 
-
 <Update label="July 20, 2026" description="v1.5">
   ### Improvements
 
   * **Transform videos with AI** — Pass a source video to the video generator to restyle, replace subjects, or reimagine the footage entirely. Requests use Gemini Omni Flash by default; agents can switch to Kling O3 for higher-quality results.
   * **Connect integrations over email, no browser required** — When you send a task via email that requires connecting a new integration, the agent now returns the OAuth or API-key link directly in its reply. The flow is the same as on web or Slack.
 </Update>
-
 
 <Update label="July 20, 2026" description="v1.4">
   ### New Features
@@ -89,7 +86,6 @@ description: "Product updates, new features, and improvements to Appy."
   * **Attach videos in Slack and on the web** — Drop an .mp4, .webm, or mov file into any conversation — both on the web or in Slack — and agents can transcribe, analyze, or build on it. Video uploads already worked in Teams; now they work everywhere.
   * **Loops email campaigns can include images** — When building an email campaign through the Loops integration, agents can now upload images directly from your files — no manual uploading to Loops first.
 </Update>
-
 
 <Update label="July 14, 2026" description="v1.3">
   ### New Features
@@ -113,12 +109,6 @@ description: "Product updates, new features, and improvements to Appy."
   ### New Features
 
   * **Artifacts** — All agent outputs — documents, images, videos, and more — are now collected in one place. Access them from any page, filter by file type or by user, and find exactly what your agents produced without hunting through past conversations.
-</Update>
-
-<Update label="June 9, 2025" description="v1.0">
-  ### New Features
-
-  * **Marketing Team (Marcus, Maven & Paige)** — Your Appy.AI workspace now includes a built-in marketing department: Marcus sets your brand strategy, Paige turns it into content, and Maven makes it social. Message them in Slack the same way you'd message a colleague — no new tools, no new logins.
 </Update>
 
 <Update label="June 5, 2026" description="v2.6">
@@ -171,4 +161,10 @@ description: "Product updates, new features, and improvements to Appy."
   ### Improvements
 
   * **Onboarding Flow** - First-time setup now walks through connecting your first integration, hiring your first specialist agent, and running a sample task. Median time-to-first-value dropped from 18 minutes to 6 minutes.
+</Update>
+
+<Update label="June 9, 2025" description="v1.0">
+  ### New Features
+
+  * **Marketing Team (Marcus, Maven & Paige)** — Your Appy.AI workspace now includes a built-in marketing department: Marcus sets your brand strategy, Paige turns it into content, and Maven makes it social. Message them in Slack the same way you'd message a colleague — no new tools, no new logins.
 </Update>
