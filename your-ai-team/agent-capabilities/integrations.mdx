@@ -11,6 +11,25 @@ When a task requires an integration, your agent walks you through connecting you
 
 Your agents never see or store your passwords. Each operates within defined, scoped permissions — no blanket access.
 
+## Connecting a service that isn't in the catalog
+
+If a tool you use isn't in the 2,000+ app catalog, just tell Violet what you want to connect and what you need it to do. Violet researches the service's API and builds the connection herself — you never touch a specification, a schema, or any technical setup.
+
+Once she's built it, she sends you one link to authorize the service. From there it works like any other integration: your agent reads data, takes actions, and asks you to confirm the first time it does anything that changes data.
+
+Two ways this can go, depending on how the service exposes itself:
+
+- **API key or token.** Violet defines the connection from the service's API docs and sends you a secure page to enter your credentials. She never asks for a key, password, or account ID in chat.
+- **Sign in with your account (OAuth).** Some services — Day.ai is one — only expose their capabilities through a remote MCP server behind your own sign-in page. For these, you authorize by signing in on the service's own page, the same way you would connect any app; Violet never sees or holds a credential for it.
+
 <Info>
-  Need an integration that isn't listed? Reach out to support — Appy.AI has hundreds more ready to enable.
+  Tell Violet whether the connection should only read data or also make changes — she asks up front, and it shapes what the connection is allowed to do. Adding capability later is just asking again; the connection doesn't need to be rebuilt from scratch.
 </Info>
+
+### Who can see and use it
+
+Once a custom integration is connected, it's visible to everyone in your organization — not just the person who built it. Any teammate can ask their agent to use it, the same as a catalog integration.
+
+The connection you authorize is still yours: your credentials stay tied to you, and a teammate using the integration doesn't see or borrow them. If the team should share one connection instead of everyone connecting individually, that's a deliberate step — ask Violet to make it a shared, organization-wide connection.
+
+Only the person who originally built the integration can change what it does. Everyone else can use it as-is.
