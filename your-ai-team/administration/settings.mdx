@@ -1,10 +1,10 @@
 ---
 title: "Profile & Settings"
-description: "Manage your personal profile, organization details, and Violet's email access settings."
+description: "Manage your personal profile, organization details, Violet's email access settings, and agent permissions."
 icon: "circle-user"
 ---
 
-Your profile and account settings live in a modal accessible from your avatar at the bottom-left of the navigation. There are three tabs: **Profile**, **Organization**, and **Email**.
+Your profile and account settings live in a modal accessible from your avatar at the bottom-left of the navigation. There are four tabs: **Profile**, **Organization**, **Email**, and **Permissions**.
 
 ## Profile
 
@@ -30,7 +30,7 @@ If you need to leave the organization entirely, the **Leave Organization** butto
 
 The Email tab controls who can reach Violet by email, and is visible only to organization admins.
 
-**Violet's Email Address** — every organization has a dedicated inbound address for Violet, shown here with a copy-to-clipboard button. Send a message to this address and Violet processes it as a task, the same way she would a Slack DM.
+**Violet's Email Address** — every organization has a dedicated inbound address for Violet, shown here with a copy-to-clipboard button. Send a message to this address and Violet processes it as a task, the same way she would a message on any other channel.
 
 **Access control is an allowlist, not a blocklist.** Only mail from a sender on this list reaches Violet — everything else is rejected outright, not queued for review. If someone emails Violet and nothing happens, this is the first place to check.
 
@@ -41,3 +41,15 @@ The Email tab controls who can reach Violet by email, and is visible only to org
 <Note>
   Only organization admins can view or change the Email tab's settings.
 </Note>
+
+## Permissions
+
+The Permissions tab controls which actions Violet can take on your organization's Knowledge library without asking you first. Each capability defaults to asking every time, so nothing changes automatically until you allow it.
+
+**What you can set, per capability:**
+
+- **Add files to Knowledge** — let Violet upload new files without confirming first.
+- **Edit files in Knowledge** — let Violet update existing files without confirming first.
+- **Delete files from Knowledge** — let Violet remove files without confirming first.
+
+Each capability has two states: **Ask** (Violet checks with you every time — the default) and **Allow always** (Violet acts without asking). Switch a capability to **Allow always** and Violet stops prompting for that action going forward; switch it back and she starts asking again.
