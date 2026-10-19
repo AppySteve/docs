@@ -1,18 +1,23 @@
 ---
-title: "Security & Trust"
-description: "Who owns an agent, business process, or website, how access moves between people, and which actions always wait for your approval before anything is changed or removed."
-icon: "shield-check"
+title: "Security"
+description: "Agent ownership, access, and protection of data"
 ---
 
-Every agent, business process, and website on your team has one accountable owner, starts visible to as few people as it safely can, and never gets deleted, archived, or disabled without you saying yes first. This page covers how that works.
+[Appy.ai](https://Appy.ai) recognizes that the confidentiality, integrity and availability of information and data created, maintained and hosted by us are vital to the success of the business and privacy of our partners.
+
+<Note>
+  **See Appy's SOC-2, GDPR, HIPAA, ISO-27001 compliance and more in the** [Appy.ai Trust Center](https://trust.appy.ai/)
+</Note>
+
+---
 
 ## Ownership: one accountable owner per resource
 
-Every agent, business process, and website carries the same three-part access list:
+Every agent, automation, and agent-created website carries the same three-part access list:
 
 - **Owner** — the one person accountable for it. Only the owner can decide who else is allowed to use or manage it.
-- **Manage** — people who can edit, configure, share, or delete it. This always includes the owner.
-- **Use** — people who can open or run it, without being able to change it.
+- **Managers** — people who can edit, configure, share, or delete it. This always includes the owner.
+- **Users** — people who can open or run it, without being able to change it.
 
 ### Who can see something when it's created
 
@@ -23,18 +28,18 @@ Nothing is public until someone with manage access decides to make it so.
 
 ### Moving ownership and changing access
 
-Ownership isn't locked in at creation. The current owner can widen or narrow who can use or manage a resource — naming your whole organization, specific teammates, or, for a website, the public — or hand ownership to someone else on the team.
-
 **Only the owner can change who else has access.** A manager who isn't the owner can still edit the resource itself, just not reassign who's allowed to see or manage it. If you ever get a message saying only the owner can make a change, that's why.
 
-Removing someone's access is treated with the same care as a deletion: if a change would take an agent, business process, or site away from someone who currently has it, Violet checks with you before making it (see below). Narrowing an agent that a live, shared business process depends on is refused outright until that business process is pointed elsewhere or narrowed first, so an access change can't silently orphan an automation other people rely on.
+<Note>
+  Message @ [appy.ai](https://appy.ai) to ask to change access to something when you have the appropriate permissions.
+</Note>
 
 ## Confirm before anything is destroyed
 
-Nothing below happens on the first ask. Before any of these actions take effect, Violet tells you exactly what's about to happen and waits for your approval — nothing is changed, deleted, or disabled until you say yes.
+Nothing below happens on the first ask. Before any of these actions take effect, Violet tells you exactly what's about to happen and waits for your approval: nothing is changed, deleted, or disabled until you say yes.
 
-| Action | What you're asked |
-|---|---|
+| **Action** | **What you're asked** |
+| --- | --- |
 | Renaming or deleting a database table, column, or link | "Rename or delete the '{name}' table, column, or link? This can destroy existing data." |
 | Archiving a custom agent | "Archive the '{name}' agent? Nobody in your organization can use it after that." |
 | Deleting a skill | "Delete the '{skill}' skill? All the files in it are removed permanently." |
@@ -45,8 +50,7 @@ Nothing below happens on the first ask. Before any of these actions take effect,
 
 A couple of guardrails sit underneath this:
 
-- **An agent can never delete or archive itself.**
-- **An agent that a live business process depends on can't be archived** until that business process is changed to stop depending on it.
+- **An agent can never delete or archive itself or its core behaviors**
 - Only Violet changes a database's structure. Adding a new table, column, or link takes effect immediately, since there's nothing to undo; renaming or deleting an existing one is what triggers the approval above — a custom agent or automated business process that needs either hands the request to her rather than making the change directly.
 - If a request mixes a safe database addition with a change to something that already exists, Violet holds the whole request for your approval together, rather than applying the safe part and asking about the rest.
 - If an unattended, automated run would need one of these approvals and there's nobody present to ask, Appy refuses the action outright and leaves everything as it was, rather than guessing on your behalf.
