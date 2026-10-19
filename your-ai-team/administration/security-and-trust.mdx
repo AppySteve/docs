@@ -1,0 +1,60 @@
+---
+title: "Security & Trust"
+description: "Who owns an agent, process, or website, how access moves between people, and which actions always wait for your approval before anything is changed or removed."
+icon: "shield-check"
+---
+
+Every agent, process, and website on your team has one accountable owner, starts visible to as few people as it safely can, and never gets deleted, archived, or disabled without you saying yes first. This page covers how that works.
+
+## Ownership: one accountable owner per resource
+
+Every agent, process, and website carries the same three-part access list:
+
+- **Owner** — the one person accountable for it. Only the owner can decide who else is allowed to use or manage it.
+- **Manage** — people who can edit, configure, share, or delete it. This always includes the owner.
+- **Use** — people who can open or run it, without being able to change it.
+
+### Who can see something when it's created
+
+- **A new custom agent or process starts visible only to the person who created it.** They're automatically its owner, and its only user and manager, until they choose to widen it.
+- **A new website starts visible to your whole organization.** Everyone signed in can open it, and its creator manages it (and owns it, if they're a member of your org) — so a page built for your team doesn't accidentally lock out the rest of it.
+
+Nothing is public until someone with manage access decides to make it so.
+
+### Moving ownership and changing access
+
+Ownership isn't locked in at creation. The current owner can widen or narrow who can use or manage a resource — naming your whole organization, specific teammates, or, for a website, the public — or hand ownership to someone else on the team.
+
+**Only the owner can change who else has access.** A manager who isn't the owner can still edit the resource itself, just not reassign who's allowed to see or manage it. If you ever get a message saying only the owner can make a change, that's why.
+
+Removing someone's access is treated with the same care as a deletion: if a change would take an agent, process, or site away from someone who currently has it, Violet checks with you before making it (see below). Narrowing an agent that a live, shared process depends on is refused outright until that process is pointed elsewhere or narrowed first, so an access change can't silently orphan an automation other people rely on.
+
+## Confirm before anything is destroyed
+
+Nothing below happens on the first ask. Before any of these actions take effect, Violet tells you exactly what's about to happen and waits for your approval — nothing is changed, deleted, or disabled until you say yes.
+
+| Action | What you're asked |
+|---|---|
+| Archiving a custom agent | "Archive the '{name}' agent? Nobody in your organization can use it after that." |
+| Deleting a skill | "Delete the '{skill}' skill? All the files in it are removed permanently." |
+| Removing one of Violet's standing rules for an agent | "Delete the '{rule}' standing rule for {agent}?" |
+| Deleting a published website | "Delete the '{site}' published site? Public links stop working and the files are removed." |
+| Deleting a process, its brief, one of its triggers, or a file inside it | "Delete the '{name}' process? This also stops its schedules." (and the matching question for each part) |
+| Deleting a cloned voice | "Delete the '{voice}' cloned voice? It's removed permanently and can't be used to make audio again." |
+
+A couple of guardrails sit underneath this:
+
+- **An agent can never delete or archive itself.**
+- **An agent that a live process depends on can't be archived** until that process is changed to stop depending on it.
+- If an unattended, automated run would need one of these approvals and there's nobody present to ask, Appy refuses the action outright and leaves everything as it was, rather than guessing on your behalf.
+
+## Database changes: only Violet touches table structure
+
+Custom agents and processes can each have their own database. Only Violet changes what a table looks like — adding, removing, or renaming a table, column, or link. A custom agent or an automated process that needs a schema change hands the request to Violet rather than making it directly.
+
+Within Violet's own changes, the risk is handled differently depending on what's changing:
+
+- **Adding a new table or column takes effect immediately** — there's nothing to undo.
+- **Renaming or deleting an existing table, column, or link needs your approval first**, since it can destroy data.
+
+If one request mixes a safe addition with a change to something that already exists, Violet holds the whole request for your approval together, rather than applying the safe part and asking about the rest.
