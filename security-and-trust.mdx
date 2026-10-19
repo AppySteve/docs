@@ -21,7 +21,7 @@ Every agent, automation, and agent-created website carries the same three-part a
 
 ### Who can see something when it's created
 
-- **A new custom agent or process starts visible only to the person who created it.** They're automatically its owner, and its only user and manager, until they choose to widen it.
+- **A new custom agent or business process starts visible only to the person who created it.** They're automatically its owner, and its only user and manager, until they choose to widen it.
 - **A new website starts visible to your whole organization.** Everyone signed in can open it, and its creator manages it (and owns it, if they're a member of your org) — so a page built for your team doesn't accidentally lock out the rest of it.
 
 Nothing is public until someone with manage access decides to make it so.
@@ -40,25 +40,17 @@ Nothing below happens on the first ask. Before any of these actions take effect,
 
 | **Action** | **What you're asked** |
 | --- | --- |
+| Renaming or deleting a database table, column, or link | "Rename or delete the '{name}' table, column, or link? This can destroy existing data." |
 | Archiving a custom agent | "Archive the '{name}' agent? Nobody in your organization can use it after that." |
 | Deleting a skill | "Delete the '{skill}' skill? All the files in it are removed permanently." |
 | Removing one of Violet's standing rules for an agent | "Delete the '{rule}' standing rule for {agent}?" |
 | Deleting a published website | "Delete the '{site}' published site? Public links stop working and the files are removed." |
-| Deleting a process, its brief, one of its triggers, or a file inside it | "Delete the '{name}' process? This also stops its schedules." (and the matching question for each part) |
+| Deleting a business process, its brief, one of its triggers, or a file inside it | "Delete the '{name}' business process? This also stops its schedules." (and the matching question for each part) |
 | Deleting a cloned voice | "Delete the '{voice}' cloned voice? It's removed permanently and can't be used to make audio again." |
 
 A couple of guardrails sit underneath this:
 
 - **An agent can never delete or archive itself or its core behaviors**
+- Only Violet changes a database's structure. Adding a new table, column, or link takes effect immediately, since there's nothing to undo; renaming or deleting an existing one is what triggers the approval above — a custom agent or automated business process that needs either hands the request to her rather than making the change directly.
+- If a request mixes a safe database addition with a change to something that already exists, Violet holds the whole request for your approval together, rather than applying the safe part and asking about the rest.
 - If an unattended, automated run would need one of these approvals and there's nobody present to ask, Appy refuses the action outright and leaves everything as it was, rather than guessing on your behalf.
-
-## Database changes: only Violet touches table structure
-
-Custom agents and processes can each have their own database. Only Violet changes what a table looks like — adding, removing, or renaming a table, column, or link. A custom agent or an automated process that needs a schema change hands the request to Violet rather than making it directly.
-
-Within Violet's own changes, the risk is handled differently depending on what's changing:
-
-- **Adding a new table or column takes effect immediately** — there's nothing to undo.
-- **Renaming or deleting an existing table, column, or link needs your approval first**, since it can destroy data.
-
-If one request mixes a safe addition with a change to something that already exists, Violet holds the whole request for your approval together, rather than applying the safe part and asking about the rest.
